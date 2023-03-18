@@ -1,5 +1,5 @@
 import { Component, ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 class Header extends Component {
@@ -13,8 +13,8 @@ class Header extends Component {
                 <Link to={'/'}>LOGO</Link>
               </div>
               <nav className={styles.nav}>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/about'}>About</Link>
+                <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/about'}>About</NavLink>
               </nav>
             </div>
           </div>
