@@ -8,8 +8,10 @@ class Layout extends Component {
     return (
       <div className="wrapper">
         <Header />
-        <main>
-          <Outlet />
+        <main className="main">
+          <div className="container">
+            <Outlet />
+          </div>
         </main>
         <Footer />
       </div>

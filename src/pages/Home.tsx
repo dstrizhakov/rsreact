@@ -1,3 +1,4 @@
+import Search from '../components/Search';
 import { Component, ReactNode } from 'react';
 
 class Home extends Component {
@@ -5,6 +6,7 @@ class Home extends Component {
     return (
       <div>
         <h1>Home</h1>
+        <Search />
       </div>
     );
   }
