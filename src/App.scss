@@ -8,10 +8,6 @@
 *:after {
 	box-sizing: border-box;
 }
-:focus,
-:active {
-	outline: none;
-}
 a:focus,
 a:active {
 	outline: none;
@@ -35,6 +31,9 @@ img {
 h1 {
 margin: 20px;
 text-align: center;
+}
+p {
+	padding: 5px 0;
 }
 
 html,
@@ -69,6 +68,6 @@ main {
 }
 
 .active {
-	color: rgb(0, 17, 255);
+	color: #f95e5e;
 	transition: all 0.3s ease 0s;
 }
