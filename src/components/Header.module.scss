@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-bottom: 2px solid white;
+}
+
+.container {
+width: 900px;
+margin: 0 auto;
+}
+
+.body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav a {
+	padding: 5px 0;
+	margin-left: 10px;
+}
