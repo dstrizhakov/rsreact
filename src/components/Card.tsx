@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, ReactNode } from 'react';
 import styles from './Card.module.scss';
 import like from '../assets/heart-icon.svg';
 import { IProduct } from 'types/Types';
@@ -12,7 +12,7 @@ class Card extends Component<IProduct, CardState> {
   increment = (): void => {
     this.setState({ likes: this.state.likes + 1 });
   };
-  render() {
+  render(): ReactNode {
     return (
       <div className={styles.card}>
         <div className={styles.body}>

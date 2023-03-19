@@ -25,7 +25,7 @@ class Search extends Component<object, { query: string }> {
     event.preventDefault();
   };
   onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    this.setState({ query: event.currentTarget.value });
+    this.setState({ query: event.target.value });
   };
   render(): ReactNode {
     return (
