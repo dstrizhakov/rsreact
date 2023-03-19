@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { it, describe, expect } from 'vitest';
 import Card from './Card';
 
@@ -67,5 +67,22 @@ describe('Card', () => {
       />
     );
     expect(screen.getByText(/987/)).toBeInTheDocument();
+  });
+  it('likes should inrement by click', () => {
+    render(
+      <Card
+        key={data.id}
+        id={data.id}
+        image={data.image}
+        title={data.title}
+        text={data.text}
+        price={data.price}
+        likes={data.likes}
+      />
+    );
+    const likeButton = screen.getByRole('like') as HTMLSpanElement;
+    expect(likeButton.innerHTML).toBe(`<img src="/src/assets/heart-icon.svg" alt="like">987`);
+    fireEvent.click(likeButton);
+    expect(likeButton.innerHTML).toBe(`<img src="/src/assets/heart-icon.svg" alt="like">988`);
   });
 });

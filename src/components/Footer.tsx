@@ -7,8 +7,8 @@ class Footer extends Component {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.body}>
-            <div>Copyright</div>
-            <div>Footer menu</div>
+            <div>Copyright 2023</div>
+            <div>RSSCHOOL 2023</div>
           </div>
         </div>
       </footer>

@@ -21,18 +21,16 @@ class Search extends Component<object, { query: string }> {
     this.saveToLocalStotage();
   }
 
-  handler = (event: React.FormEvent<HTMLFormElement>): void => {
-    event.preventDefault();
-  };
   onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     this.setState({ query: event.target.value });
   };
   render(): ReactNode {
     return (
       <div className={styles.body}>
-        <form onSubmit={(event) => this.handler(event)} className={styles.form}>
+        <form onSubmit={(event) => event.preventDefault()} className={styles.form}>
           <div className={styles.search}>
             <input
+              role="search"
               type="text"
               placeholder="Search query..."
               onChange={this.onChange}

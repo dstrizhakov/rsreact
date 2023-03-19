@@ -25,7 +25,7 @@ position: relative;
 
 .content {
 padding: 5px 10px;
-
+font-size: 14px;
 }
 
 .actions {
@@ -36,11 +36,13 @@ padding: 5px 10px;
 }
 
 .actions span {
+	font-size: 12px;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 }
 .actions span img {
+	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(-40deg) brightness(118%) contrast(119%);
 	height: 15px;
 	margin-right: 4px;
 }

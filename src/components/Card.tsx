@@ -24,7 +24,7 @@ class Card extends Component<IProduct, CardState> {
             <p>{this.props.text}</p>
           </div>
           <div className={styles.actions}>
-            <span onClick={this.increment}>
+            <span role="like" onClick={this.increment}>
               <img src={like} alt="like" />
               {this.state.likes}
             </span>
