@@ -1,17 +1,33 @@
 import Search from '../components/Search';
 import { Component, ReactNode } from 'react';
-import Card from '../components/Card';
+import ProductList from '../components/ProductList';
 
-// const items = [
-// 	item: {
-// 		id: 1,
-// 		image: "product01.jpg",
-// 		title: "Arizona valley",
-// 		text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-// 		price: 120,
-// 		likes: 27,
-// 	}
-// ]
+const products = [
+  {
+    id: 1,
+    image: 'product01.jpg',
+    title: 'Arizona valley',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: 120,
+    likes: 27,
+  },
+  {
+    id: 2,
+    image: 'product02.jpg',
+    title: 'Arizona valley',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: 160,
+    likes: 0,
+  },
+  {
+    id: 3,
+    image: 'product03.jpg',
+    title: 'Arizona valley',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: 100,
+    likes: 10,
+  },
+];
 
 class Home extends Component {
   render(): ReactNode {
@@ -20,7 +36,7 @@ class Home extends Component {
         <h1>Home</h1>
         <Search />
         <div className="cards">
-          <Card id={1} image="product01.jpg" title="my title" text="lorem" price={120} likes={27} />
+          <ProductList products={products} />
         </div>
       </div>
     );

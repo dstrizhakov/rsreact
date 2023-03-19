@@ -1,18 +1,17 @@
 import { Component } from 'react';
 import styles from './Card.module.scss';
 import like from '../assets/heart-icon.svg';
+import { IProduct } from 'types/Types';
 
-export interface CardProps {
-  id: number;
-  image: string;
-  title: string;
-  text: string;
-  price: number;
-  likes?: number;
-}
+type CardState = {
+  likes: number;
+};
 
-class Card extends Component<CardProps> {
+class Card extends Component<IProduct, CardState> {
   state = { likes: this.props.likes || 0 };
+  increment = (): void => {
+    this.setState({ likes: this.state.likes + 1 });
+  };
   render() {
     return (
       <div className={styles.card}>
@@ -25,7 +24,7 @@ class Card extends Component<CardProps> {
             <p>{this.props.text}</p>
           </div>
           <div className={styles.actions}>
-            <span>
+            <span onClick={this.increment}>
               <img src={like} alt="like" />
               {this.state.likes}
             </span>

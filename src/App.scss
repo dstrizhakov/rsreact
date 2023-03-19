@@ -44,7 +44,7 @@ body {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 16px;
 	background-color: aliceblue;
-	color: rgb(45, 45, 45);
+	color: rgb(1, 21, 91);
 }
 
 #root {
@@ -72,7 +72,8 @@ main {
 	transition: all 0.3s ease 0s;
 }
 .cards {
-	margin: 20px -10px;
-	display: flex;
-	flex-wrap: wrap;
+	margin: 20px 0;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 }
