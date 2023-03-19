@@ -13,6 +13,7 @@ class Header extends Component {
               <div className={styles.logo}>
                 <Link to={'/'}>
                   <img src={logo} height="20px" alt="logo" />
+                  <h4>RS REACT</h4>
                 </Link>
               </div>
               <nav className={styles.nav}>
