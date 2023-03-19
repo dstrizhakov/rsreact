@@ -71,3 +71,8 @@ main {
 	color: #f95e5e;
 	transition: all 0.3s ease 0s;
 }
+.cards {
+	margin: 20px -10px;
+	display: flex;
+	flex-wrap: wrap;
+}

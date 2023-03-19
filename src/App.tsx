@@ -1,5 +1,5 @@
 import './App.scss';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Component, ReactNode } from 'react';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -14,7 +14,8 @@ class App extends Component {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="404" element={<NotFound />} />
+            <Route path="*" element={<Navigate to="404" />} />
           </Route>
         </Routes>
       </>
