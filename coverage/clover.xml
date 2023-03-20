@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679257014668" clover="3.2.0">
-  <project timestamp="1679257014668" name="All files">
-    <metrics statements="218" coveredstatements="218" conditionals="18" coveredconditionals="18" methods="17" coveredmethods="16" elements="253" coveredelements="252" complexity="0" loc="218" ncloc="218" packages="2" files="7" classes="7"/>
+<coverage generated="1679305472725" clover="3.2.0">
+  <project timestamp="1679305472726" name="All files">
+    <metrics statements="216" coveredstatements="216" conditionals="18" coveredconditionals="18" methods="17" coveredmethods="16" elements="251" coveredelements="250" complexity="0" loc="216" ncloc="216" packages="2" files="7" classes="7"/>
     <package name="components">
       <metrics statements="131" coveredstatements="131" conditionals="15" coveredconditionals="15" methods="14" coveredmethods="13"/>
       <file name="Card.tsx" path="/Users/das/Documents/rs_school/rsreact/src/components/Card.tsx">
@@ -149,9 +149,9 @@
       </file>
     </package>
     <package name="pages">
-      <metrics statements="87" coveredstatements="87" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <metrics statements="85" coveredstatements="85" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="About.tsx" path="/Users/das/Documents/rs_school/rsreact/src/pages/About.tsx">
-        <metrics statements="28" coveredstatements="28" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="26" coveredstatements="26" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -178,8 +178,6 @@
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
       </file>
       <file name="Home.tsx" path="/Users/das/Documents/rs_school/rsreact/src/pages/Home.tsx">
         <metrics statements="46" coveredstatements="46" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
