@@ -36,7 +36,7 @@ class ProductForm extends Component<object, ProductFormState> {
         image: true,
         price: true,
         isAvailable: true,
-        isSale: false,
+        isSale: true,
       },
       products: [],
     };
@@ -68,14 +68,14 @@ class ProductForm extends Component<object, ProductFormState> {
         ...prevState.validation,
         description: true,
         title: true,
+        created: true,
+        type: true,
+        image: true,
+        price: true,
+        isAvailable: true,
+        isSale: true,
       },
     }));
-    // this.setState((state) => {
-    //   state.validation.description = true;
-    // });
-    // this.setState((state) => {
-    //   state.validation.title = true;
-    // });
   }
   validate(product: IProduct): boolean {
     this.resetValidation();
@@ -88,11 +88,38 @@ class ProductForm extends Component<object, ProductFormState> {
       }));
       return false;
     }
-    if (product.text ? product.text?.length < 3 : true) {
+    if (product.text ? product.text?.length < 10 : true) {
       this.setState((prevState) => ({
         validation: {
           ...prevState.validation,
           description: false,
+        },
+      }));
+      return false;
+    }
+    if (product.price ? product.price?.length < 1 : true) {
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          price: false,
+        },
+      }));
+      return false;
+    }
+    if (product.created ? product.created?.length < 3 : true) {
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          created: false,
+        },
+      }));
+      return false;
+    }
+    if (!product.isAvailable) {
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          isAvailable: false,
         },
       }));
       return false;
@@ -112,12 +139,12 @@ class ProductForm extends Component<object, ProductFormState> {
     const product = {
       id: Date.now().toString(),
       image: this.fileInput.current?.value || 'product01.jpg',
-      title: this.titleInput.current?.value || ' ',
-      text: this.textInput.current?.value || ' ',
-      created: this.dateInput.current?.value || ' ',
-      type: this.typeInput.current?.value || ' ',
-      price: this.priceInput.current?.value || ' ',
-      isAvailable: this.availInput.current?.checked || true,
+      title: this.titleInput.current?.value || '',
+      text: this.textInput.current?.value || '',
+      created: this.dateInput.current?.value || '',
+      type: this.typeInput.current?.value || '',
+      price: this.priceInput.current?.value || '',
+      isAvailable: this.availInput.current?.checked,
       isSale: this.saleInput.current?.checked || false,
     };
 
@@ -139,14 +166,14 @@ class ProductForm extends Component<object, ProductFormState> {
             <MyInput
               title="Item title:"
               id="title"
-              error="Some Error!"
+              error="Title must be more than 3 characters!"
               refer={this.titleInput}
               isValid={this.state.validation.title}
             />
             <MyTextarea
               title="Item description:"
               id="description"
-              error="Error!"
+              error="Title must be more than 10 characters!"
               refer={this.textInput}
               isValid={this.state.validation.description}
             />
@@ -154,14 +181,14 @@ class ProductForm extends Component<object, ProductFormState> {
               <MyDateInput
                 title="Created date:"
                 id="date"
-                error="Some date Error!"
+                error="Error!"
                 refer={this.dateInput}
                 isValid={this.state.validation.created}
               />
               <MySelect
                 title="Type:"
                 id="type"
-                error="Some date Error!"
+                error="Error!"
                 refer={this.typeInput}
                 isValid={this.state.validation.type}
               />
@@ -169,7 +196,7 @@ class ProductForm extends Component<object, ProductFormState> {
             <MyFileInput
               title="File:"
               id="File"
-              error="Some file Error!"
+              error="Error!"
               refer={this.fileInput}
               isValid={this.state.validation.image}
             />
@@ -177,7 +204,7 @@ class ProductForm extends Component<object, ProductFormState> {
               <MyInput
                 title="Item price:"
                 id="price"
-                error="Some price Error!"
+                error="Error!"
                 refer={this.priceInput}
                 isValid={this.state.validation.price}
               />
@@ -185,14 +212,14 @@ class ProductForm extends Component<object, ProductFormState> {
                 <MySwitch
                   title="Available:"
                   id="availability"
-                  error="Some switch Error!"
+                  error="It should be available!"
                   refer={this.availInput}
                   isValid={this.state.validation.isAvailable}
                 />
                 <MySwitch
                   title="Sale:"
                   id="sale"
-                  error="Some switch Error!"
+                  error="Error!"
                   refer={this.saleInput}
                   isValid={this.state.validation.isSale}
                 />

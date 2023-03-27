@@ -12,7 +12,7 @@ export interface IInputStateProps {
 class MySwitch extends Component<IInputStateProps> {
   render(): ReactNode {
     return (
-      <div className="switch">
+      <div className={this.props.isValid ? 'switch' : 'switch error'}>
         <p>{this.props.title}</p>
         <input
           ref={this.props.refer}
@@ -21,6 +21,7 @@ class MySwitch extends Component<IInputStateProps> {
           className="checkbox"
         ></input>
         <label htmlFor={this.props.id}></label>
+        <span>{this.props.error}</span>
       </div>
     );
   }

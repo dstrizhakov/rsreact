@@ -3,11 +3,30 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-left: 20px;
+	position: relative;
 }
 .switch p{
 position: relative;
 top: 10px;
 }
+.switch.error p{
+color: red;
+	}
+
+	.switch span {
+		display: none;
+		font-size: 0.7rem;
+		padding-left: 5px;
+	}
+	
+	.switch.error span {
+		display: block;
+		position: absolute;
+		color: red;
+		bottom: -15px;
+		left: 10px;
+	}
+	
 .checkbox {
 	position: relative;
 	opacity: 0;
