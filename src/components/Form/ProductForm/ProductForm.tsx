@@ -136,9 +136,13 @@ class ProductForm extends Component<object, ProductFormState> {
 
   onSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
+    console.log(this.fileInput);
+    // const file = this.fileInput.current ? this.fileInput.current.files['0'] : 'product01.jpg';
     const product = {
       id: Date.now().toString(),
-      image: this.fileInput.current?.value || 'product01.jpg',
+      image: this.fileInput.current?.files
+        ? URL.createObjectURL(this.fileInput.current?.files['0'])
+        : 'product01.jpg',
       title: this.titleInput.current?.value || '',
       text: this.textInput.current?.value || '',
       created: this.dateInput.current?.value || '',
@@ -155,7 +159,6 @@ class ProductForm extends Component<object, ProductFormState> {
     const tempProductsState = [...this.state.products];
     tempProductsState.push(product);
     this.setState({ products: tempProductsState });
-    console.log(this.state);
     this.clearForm();
   }
   render(): ReactNode {

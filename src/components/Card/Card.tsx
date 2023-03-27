@@ -17,7 +17,7 @@ class Card extends Component<IProduct, CardState> {
       <div className={styles.card}>
         <div className={styles.body}>
           <div className={styles.image}>
-            <img src={`../../public/${this.props.image}`} alt="this.props.image" />
+            <img src={this.props.image} alt="this.props.image" />
           </div>
           <div className={styles.content}>
             <h2>{this.props.title}</h2>
