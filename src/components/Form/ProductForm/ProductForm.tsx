@@ -115,6 +115,16 @@ class ProductForm extends Component<object, ProductFormState> {
       }));
       return false;
     }
+    if (product.image ? product.image?.length < 3 : true) {
+      console.log(product.image);
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          image: false,
+        },
+      }));
+      return false;
+    }
     if (!product.isAvailable) {
       this.setState((prevState) => ({
         validation: {
@@ -136,13 +146,11 @@ class ProductForm extends Component<object, ProductFormState> {
 
   onSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
-    console.log(this.fileInput);
-    // const file = this.fileInput.current ? this.fileInput.current.files['0'] : 'product01.jpg';
     const product = {
       id: Date.now().toString(),
-      image: this.fileInput.current?.files
+      image: this.fileInput.current?.files?.length
         ? URL.createObjectURL(this.fileInput.current?.files['0'])
-        : 'product01.jpg',
+        : '',
       title: this.titleInput.current?.value || '',
       text: this.textInput.current?.value || '',
       created: this.dateInput.current?.value || '',
@@ -163,7 +171,7 @@ class ProductForm extends Component<object, ProductFormState> {
   }
   render(): ReactNode {
     return (
-      <>
+      <div className={styles.wrapper}>
         <div className={styles.body}>
           <form onSubmit={this.onSubmit} className={styles.form}>
             <MyInput
@@ -234,7 +242,7 @@ class ProductForm extends Component<object, ProductFormState> {
         <div className="cards">
           <ProductList products={this.state.products} />
         </div>
-      </>
+      </div>
     );
   }
 }
