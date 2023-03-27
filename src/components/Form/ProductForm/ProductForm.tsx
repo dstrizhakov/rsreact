@@ -63,27 +63,38 @@ class ProductForm extends Component<object, ProductFormState> {
     return Math.floor(Math.random() * 1000);
   }
   resetValidation(): void {
-    this.setState((state) => {
-      state.validation.description = true;
-    });
-    this.setState((state) => {
-      state.validation.title = true;
-    });
+    this.setState((prevState) => ({
+      validation: {
+        ...prevState.validation,
+        description: true,
+        title: true,
+      },
+    }));
+    // this.setState((state) => {
+    //   state.validation.description = true;
+    // });
+    // this.setState((state) => {
+    //   state.validation.title = true;
+    // });
   }
   validate(product: IProduct): boolean {
     this.resetValidation();
     if (product.title ? product.title?.length < 3 : true) {
-      this.setState((state) => {
-        state.validation.title = false;
-      });
-      console.log('Validation failed', this.state);
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          title: false,
+        },
+      }));
       return false;
     }
     if (product.text ? product.text?.length < 3 : true) {
-      this.setState((state) => {
-        state.validation.description = false;
-      });
-      console.log('Validation failed', this.state);
+      this.setState((prevState) => ({
+        validation: {
+          ...prevState.validation,
+          description: false,
+        },
+      }));
       return false;
     }
     return true;
