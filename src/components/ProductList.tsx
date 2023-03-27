@@ -17,6 +17,9 @@ class ProductList extends Component<ProductListProps> {
         text={product.text}
         price={product.price}
         likes={product.likes}
+        created={product.created}
+        isAvailable={product.isAvailable}
+        isSale={product.isSale}
       />
     ));
   }

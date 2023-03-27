@@ -1,26 +1,26 @@
 const products = [
   {
-    id: 1,
+    id: '1',
     image: 'product01.jpg',
     title: 'Arizona valley',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    price: 120,
+    price: '120',
     likes: 27,
   },
   {
-    id: 2,
+    id: '2',
     image: 'product02.jpg',
     title: 'Arizona valley',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    price: 160,
+    price: '160',
     likes: 0,
   },
   {
-    id: 3,
+    id: '3',
     image: 'product03.jpg',
     title: 'Arizona valley',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    price: 100,
+    price: '100',
     likes: 10,
   },
 ];

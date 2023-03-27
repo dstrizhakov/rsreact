@@ -6,7 +6,7 @@ export interface IProduct {
   price: string;
   likes?: number;
   created?: number | string;
-  isAvailable: boolean;
+  isAvailable?: boolean;
   isSale?: boolean;
 }
 

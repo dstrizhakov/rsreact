@@ -3,11 +3,11 @@ import { it, describe, expect } from 'vitest';
 import Card from './Card';
 
 const data = {
-  id: 1,
+  id: '1',
   image: 'product01.jpg',
   title: 'Test title',
   text: 'Lorem ipsum dolor',
-  price: 12345,
+  price: '12345',
   likes: 987,
 };
 

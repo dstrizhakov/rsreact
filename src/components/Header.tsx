@@ -18,6 +18,7 @@ class Header extends Component {
               </div>
               <nav className={styles.nav}>
                 <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/form'}>Form</NavLink>
                 <NavLink to={'/about'}>About</NavLink>
               </nav>
             </div>
