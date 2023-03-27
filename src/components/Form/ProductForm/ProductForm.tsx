@@ -2,9 +2,9 @@ import { Component, ReactNode } from 'react';
 import styles from './ProductForm.module.scss';
 import { IProduct } from 'types/Types';
 import React from 'react';
-import MyInput from './MyInput';
-import MyTextarea from './MyTextarea';
-import ProductList from './ProductList';
+import MyInput from '../MyInput/MyInput';
+import MyTextarea from '../MyTextarea/MyTextarea';
+import ProductList from '../../ProductList/ProductList';
 
 type ProductFormState = {
   validation: {

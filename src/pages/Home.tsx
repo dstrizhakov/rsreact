@@ -1,6 +1,6 @@
-import Search from '../components/Search';
+import Search from '../components/Search/Search';
 import { Component, ReactNode } from 'react';
-import ProductList from '../components/ProductList';
+import ProductList from '../components/ProductList/ProductList';
 import products from '../mock/products';
 
 class Home extends Component {

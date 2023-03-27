@@ -1,5 +1,5 @@
 import { Component, ReactNode } from 'react';
-import Card from '../components/Card';
+import Card from '../Card/Card';
 import { IProduct } from 'types/Types';
 
 interface ProductListProps {

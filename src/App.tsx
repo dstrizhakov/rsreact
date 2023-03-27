@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import About from './pages/About';
 import Form from './pages/Form';
-import Layout from './components/Layout';
+import Layout from './components/Layout/Layout';
 
 class App extends Component {
   render(): ReactNode {

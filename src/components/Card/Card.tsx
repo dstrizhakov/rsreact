@@ -1,6 +1,6 @@
 import { Component, ReactNode } from 'react';
 import styles from './Card.module.scss';
-import like from '../assets/heart-icon.svg';
+import like from '../../assets/heart-icon.svg';
 import { IProduct } from 'types/Types';
 
 type CardState = {

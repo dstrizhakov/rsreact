@@ -1,7 +1,7 @@
 import { Component, ReactNode } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import styles from './Header.module.scss';
-import logo from '../assets/react.svg';
+import logo from '../../assets/react.svg';
 
 class Header extends Component {
   render(): ReactNode {

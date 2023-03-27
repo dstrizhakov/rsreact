@@ -1,4 +1,4 @@
-import ProductForm from '../components/ProductForm';
+import ProductForm from '../components/Form/ProductForm/ProductForm';
 import { Component, ReactNode } from 'react';
 
 class Form extends Component {
