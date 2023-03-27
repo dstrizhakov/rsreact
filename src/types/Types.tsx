@@ -9,5 +9,3 @@ export interface IProduct {
   isAvailable?: boolean;
   isSale?: boolean;
 }
-
-
