@@ -10,8 +10,4 @@ export interface IProduct {
   isSale?: boolean;
 }
 
-// export interface IProductForm extends IProduct {
-//   created: number | string;
-//   isAvailable: boolean;
-//   isSale: boolean;
-// }
+

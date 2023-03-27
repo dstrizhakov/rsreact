@@ -5,6 +5,10 @@ import React from 'react';
 import MyInput from '../MyInput/MyInput';
 import MyTextarea from '../MyTextarea/MyTextarea';
 import ProductList from '../../ProductList/ProductList';
+import MyDateInput from '../MyDateInput/MyDateInput';
+import MySelect from '../MySelect/MySelect';
+import MyFileInput from '../MyFileInput/MyFileInput';
+import MySwitch from '../MySwitch/MySwitch';
 
 type ProductFormState = {
   validation: {
@@ -136,55 +140,51 @@ class ProductForm extends Component<object, ProductFormState> {
               isValid={this.state.validation.description}
             />
             <div className={styles.row}>
-              <div className={styles.input}>
-                <label htmlFor="created">Created date:</label>
-                <input ref={this.dateInput} id="created" type="date" required />
-                <span>Error. Created date should be not empty.</span>
-              </div>
-              <div className={styles.input}>
-                <label htmlFor="type">Type:</label>
-                <select ref={this.typeInput} id="type">
-                  <option value="Oil on canvas">Oil on canvas</option>
-                  <option value="Acrylic on canvas">Acrylic on canvas</option>
-                  <option value="Watercolor">Watercolor</option>
-                  <option value="Oil on cardboard">Oil on cardboard</option>
-                  <option value="Acrylic on cardboard">Acrylic on cardboard</option>
-                </select>
-                <span>Error. Search query should be not empty.</span>
-              </div>
+              <MyDateInput
+                title="Created date:"
+                id="date"
+                error="Some date Error!"
+                refer={this.dateInput}
+                isValid={this.state.validation.created}
+              />
+              <MySelect
+                title="Type:"
+                id="type"
+                error="Some date Error!"
+                refer={this.typeInput}
+                isValid={this.state.validation.type}
+              />
             </div>
-            <div className={styles.input}>
-              <label htmlFor="file">File:</label>
-              <input ref={this.fileInput} id="file" type="file" />
-              <span>Error. You should upload file.</span>
-            </div>
+            <MyFileInput
+              title="File:"
+              id="File"
+              error="Some file Error!"
+              refer={this.fileInput}
+              isValid={this.state.validation.image}
+            />
             <div className={styles.row}>
-              <div className={styles.input}>
-                <label htmlFor="price">Item price:</label>
-                <input ref={this.priceInput} id="price" type="text" required />
-                <span>Error. Price should be not empty.</span>
-              </div>
+              <MyInput
+                title="Item price:"
+                id="price"
+                error="Some price Error!"
+                refer={this.priceInput}
+                isValid={this.state.validation.price}
+              />
               <div className={styles.switches}>
-                <div className={styles.switch}>
-                  <p>Available:</p>
-                  <input
-                    ref={this.availInput}
-                    id="availability"
-                    type="checkbox"
-                    className={styles.checkbox}
-                  ></input>
-                  <label htmlFor="availability"></label>
-                </div>
-                <div className={styles.switch}>
-                  <p>Sale:</p>
-                  <input
-                    ref={this.saleInput}
-                    id="sale"
-                    type="checkbox"
-                    className={styles.checkbox}
-                  ></input>
-                  <label htmlFor="sale"></label>
-                </div>
+                <MySwitch
+                  title="Available:"
+                  id="availability"
+                  error="Some switch Error!"
+                  refer={this.availInput}
+                  isValid={this.state.validation.isAvailable}
+                />
+                <MySwitch
+                  title="Sale:"
+                  id="sale"
+                  error="Some switch Error!"
+                  refer={this.saleInput}
+                  isValid={this.state.validation.isSale}
+                />
               </div>
             </div>
             <button>Create</button>
