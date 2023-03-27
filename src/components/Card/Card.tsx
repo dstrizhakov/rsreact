@@ -21,7 +21,7 @@ class Card extends Component<IProduct, CardState> {
           </div>
           <div className={styles.content}>
             <h2>{this.props.title}</h2>
-            <p>{this.props.text}</p>
+            <p data-testid="custom-element">{this.props.text}</p>
           </div>
           <div className={styles.actions}>
             <span role="like" onClick={this.increment}>
