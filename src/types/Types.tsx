@@ -1,0 +1,11 @@
+export interface IProduct {
+  id: string;
+  image: string;
+  title: string;
+  text: string;
+  price: string;
+  likes?: number;
+  created?: string;
+  isAvailable?: boolean;
+  isSale?: boolean;
+}
