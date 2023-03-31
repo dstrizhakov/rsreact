@@ -1,24 +1,28 @@
-import { Component, ReactNode } from 'react';
+import { FC } from 'react';
+import { IInputProps } from 'types/Types';
 import './MyTextarea.scss';
 
-interface ITextareaStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject<HTMLTextAreaElement>;
-  error: string;
-  isValid: boolean;
-}
-
-class MyTextarea extends Component<ITextareaStateProps> {
-  render(): ReactNode {
-    return (
-      <div className={this.props.isValid ? 'textarea' : 'textarea error'}>
-        <label htmlFor={this.props.id}>{this.props.title}</label>
-        <textarea ref={this.props.refer} id={this.props.id} />
-        <span>{this.props.error}</span>
-      </div>
-    );
-  }
-}
+const MyTextarea: FC<IInputProps> = ({ register, errors }) => {
+  return (
+    <div className={errors?.text ? 'textarea error' : 'textarea'}>
+      <label htmlFor="text">Description:</label>
+      <textarea
+        id="text"
+        {...register('text', {
+          required: 'Enter details...',
+          minLength: {
+            value: 10,
+            message: 'Min length is 10 symbols...',
+          },
+          maxLength: {
+            value: 200,
+            message: 'Max length is 200 symbols...',
+          },
+        })}
+      />
+      {errors?.text && <span>{errors?.text?.message || 'Error'}</span>}
+    </div>
+  );
+};
 
 export default MyTextarea;

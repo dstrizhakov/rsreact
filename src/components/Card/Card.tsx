@@ -1,39 +1,36 @@
-import { Component, ReactNode } from 'react';
+import { FC, useState } from 'react';
 import styles from './Card.module.scss';
-import like from '../../assets/heart-icon.svg';
+import likeIcon from '../../assets/heart-icon.svg';
 import { IProduct } from 'types/Types';
 
-type CardState = {
-  likes: number;
-};
+const Card: FC<IProduct> = ({ image, title, text, price, likes, isAvailable, isSale }) => {
+  const [like, setLike] = useState(likes ?? 0);
 
-class Card extends Component<IProduct, CardState> {
-  state = { likes: this.props.likes || 0 };
-  increment = (): void => {
-    this.setState({ likes: this.state.likes + 1 });
+  const increment = (): void => {
+    setLike((prev) => prev + 1);
   };
-  render(): ReactNode {
-    return (
-      <div className={styles.card}>
-        <div className={styles.body}>
-          <div className={styles.image}>
-            <img src={this.props.image} alt="this.props.image" />
-          </div>
-          <div className={styles.content}>
-            <h2>{this.props.title}</h2>
-            <p data-testid="custom-element">{this.props.text}</p>
-          </div>
-          <div className={styles.actions}>
-            <span role="like" onClick={this.increment}>
-              <img src={like} alt="like" />
-              {this.state.likes}
-            </span>
-            <h3>{this.props.price}USD</h3>
-          </div>
+
+  return (
+    <div className={styles.card}>
+      <div className={styles.body}>
+        {isSale && <span className={styles.sale}>Sale</span>}
+        <div className={styles.image}>
+          <img src={image} alt="image" />
+        </div>
+        <div className={styles.content}>
+          <h2>{title}</h2>
+          <p data-testid="custom-element">{text}</p>
+        </div>
+        <div className={styles.actions}>
+          <span role="like" onClick={increment}>
+            <img src={likeIcon} alt="like" />
+            {like}
+          </span>
+          {isAvailable ? <h3>{price}USD</h3> : <h3>Not Avail</h3>}
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Card;

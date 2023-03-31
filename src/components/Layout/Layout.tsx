@@ -1,22 +1,20 @@
-import { Component, ReactNode } from 'react';
+import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
-class Layout extends Component {
-  render(): ReactNode {
-    return (
-      <div className="wrapper">
-        <Header />
-        <main className="main">
-          <div className="container">
-            <Outlet />
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-}
+const Layout: FC = () => {
+  return (
+    <div className="wrapper">
+      <Header />
+      <main className="main">
+        <div className="container">
+          <Outlet />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Layout;

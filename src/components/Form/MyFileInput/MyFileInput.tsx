@@ -1,24 +1,30 @@
-import { Component, ReactNode } from 'react';
-import '../MyInput/MyInput';
+import { FC } from 'react';
+import { IInputProps } from 'types/Types';
+import '../MyTitleInput/MyTitleInput';
 
-export interface IInputStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject<HTMLInputElement>;
-  error: string;
-  isValid: boolean;
-}
-
-class MyFileInput extends Component<IInputStateProps> {
-  render(): ReactNode {
-    return (
-      <div className={this.props.isValid ? 'input' : 'input error'}>
-        <label htmlFor={this.props.id}>{this.props.title}</label>
-        <input ref={this.props.refer} id={this.props.id} type="file" />
-        <span>{this.props.error}</span>
-      </div>
-    );
+const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
+  function isValidFile(files: FileList) {
+    const typeFile = files[0].type;
+    if (typeFile === 'image/jpeg' || typeFile === 'image/png') {
+      return true;
+    }
+    return false;
   }
-}
+  return (
+    <div className={errors?.file ? 'input error' : 'input'}>
+      <label htmlFor="file">Select file:</label>
+      <input
+        id="file"
+        type="file"
+        accept="image/*"
+        {...register('file', {
+          required: 'Attach the image file',
+          validate: (file) => isValidFile(file) || `Image file *jpeg or *png only accepted...`,
+        })}
+      />
+      {errors?.file && <span>{errors?.file?.message || 'Error'}</span>}
+    </div>
+  );
+};
 
 export default MyFileInput;

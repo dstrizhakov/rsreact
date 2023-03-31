@@ -27,7 +27,8 @@
 	bottom: 5px;
 }
 
-.input.error input {
+.input.error input,
+.input.error select {
 	border: 1px solid rgb(255, 3, 108);
   outline-color: rgb(255, 3, 108);
 }
