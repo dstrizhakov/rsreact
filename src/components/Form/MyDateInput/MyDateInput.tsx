@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import '../MyTitleInput/MyTitleInput';
+import '../MyInput/MyInput';
 
 const MyDateInput: FC<IInputProps> = ({ register, errors }) => {
   function isValidDate(date: string) {

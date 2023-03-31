@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import '../MyTitleInput/MyTitleInput';
+import '../MyInput/MyInput';
 
 const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
   function isValidFile(files: FileList) {

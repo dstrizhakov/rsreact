@@ -7,8 +7,10 @@ import MySelect from '../MySelect/MySelect';
 import { useForm } from 'react-hook-form';
 import MyFileInput from '../MyFileInput/MyFileInput';
 import MyDateInput from '../MyDateInput/MyDateInput';
-import MyTitleInput from '../MyTitleInput/MyTitleInput';
+import MyTitleInput from '../MyInput/MyTitleInput';
 import MyAvailSwitch from '../MySwitch/MyAvailSwitch';
+import MySaleSwitch from '../MySwitch/MySaleSwitch';
+import MyPriceInput from '../MyInput/MyPriceInput';
 
 const ProductHookForm = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -49,8 +51,10 @@ const ProductHookForm = () => {
           </div>
           <MyFileInput register={register} errors={errors} />
           <div className={styles.row}>
+            <MyPriceInput register={register} errors={errors} />
             <div className={styles.switches}>
               <MyAvailSwitch register={register} errors={errors} />
+              <MySaleSwitch register={register} errors={errors} />
             </div>
           </div>
           <button>Create</button>

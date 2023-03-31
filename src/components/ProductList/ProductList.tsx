@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import Card from '../Card/Card';
 import { IProduct } from 'types/Types';
 

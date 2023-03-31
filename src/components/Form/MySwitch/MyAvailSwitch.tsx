@@ -5,7 +5,7 @@ import './MySwitch.scss';
 const MyAvailSwitch: FC<IInputProps> = ({ register, errors }) => {
   return (
     <div className={errors?.isAvailable ? 'switch error' : 'switch'}>
-      <p>Is Available</p>
+      <p>Available:</p>
       <input
         data-testid="isAvailable"
         id="isAvailable"

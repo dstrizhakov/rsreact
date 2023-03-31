@@ -2,23 +2,21 @@ import { FC } from 'react';
 import { IInputProps } from 'types/Types';
 import './MySwitch.scss';
 
-const MyAvailSwitch: FC<IInputProps> = ({ register, errors }) => {
+const MySaleSwitch: FC<IInputProps> = ({ register, errors }) => {
   return (
-    <div className={errors?.isAvailable ? 'switch error' : 'switch'}>
-      <p>Is Available</p>
+    <div className={errors?.isSale ? 'switch error' : 'switch'}>
+      <p>Sale:</p>
       <input
-        data-testid="isAvailable"
-        id="isAvailable"
+        data-testid="isSale"
+        id="isSale"
         type="checkbox"
         className="checkbox"
-        {...register('isAvailable', {
-          required: 'Product should be avail',
-        })}
+        {...register('isSale', {})}
       ></input>
-      <label htmlFor="isAvailable"></label>
-      {errors?.isAvailable && <span>{errors?.isAvailable?.message || 'Error'}</span>}
+      <label htmlFor="isSale"></label>
+      {errors?.isSale && <span>{errors?.isSale?.message || 'Error'}</span>}
     </div>
   );
 };
 
-export default MyAvailSwitch;
+export default MySaleSwitch;

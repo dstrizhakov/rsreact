@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import './MyTitleInput.scss';
+import './MyInput.scss';
 
 const MyTitleInput: FC<IInputProps> = ({ register, errors }) => {
   return (
