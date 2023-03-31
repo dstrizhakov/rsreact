@@ -1,12 +1,13 @@
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import '../MyInput/MyInput';
+import './MySelect';
 
 const MySelect: FC<IInputProps> = ({ register, errors }) => {
   return (
     <div className={errors?.type ? 'input error' : 'input'}>
       <label htmlFor="type">Select type:</label>
       <select
+        data-testid="type"
         id="type"
         {...register('type', {
           required: 'Select some type...',

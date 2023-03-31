@@ -9,6 +9,8 @@ const data = {
   text: 'Lorem ipsum dolor',
   price: '12345',
   likes: 987,
+  isAvailable: true,
+  isSale: true,
 };
 
 describe('Card', () => {
@@ -22,6 +24,8 @@ describe('Card', () => {
         text={data.text}
         price={data.price}
         likes={data.likes}
+        isAvailable={data.isAvailable}
+        isSale={data.isSale}
       />
     );
     expect(screen.getByText(/Test title/)).toBeInTheDocument();
@@ -36,6 +40,8 @@ describe('Card', () => {
         text={data.text}
         price={data.price}
         likes={data.likes}
+        isAvailable={data.isAvailable}
+        isSale={data.isSale}
       />
     );
     expect(screen.getByText(/Lorem ipsum dolor/)).toBeInTheDocument();
@@ -50,9 +56,27 @@ describe('Card', () => {
         text={data.text}
         price={data.price}
         likes={data.likes}
+        isAvailable={data.isAvailable}
+        isSale={data.isSale}
       />
     );
     expect(screen.getByText(/12345/)).toBeInTheDocument();
+  });
+  it('should have not avail text', () => {
+    render(
+      <Card
+        key={data.id}
+        id={data.id}
+        image={data.image}
+        title={data.title}
+        text={data.text}
+        price={data.price}
+        likes={data.likes}
+        isAvailable={false}
+        isSale={data.isSale}
+      />
+    );
+    expect(screen.getByText(/Not Avail/)).toBeInTheDocument();
   });
   it('should have likes', () => {
     render(
@@ -64,6 +88,8 @@ describe('Card', () => {
         text={data.text}
         price={data.price}
         likes={data.likes}
+        isAvailable={data.isAvailable}
+        isSale={data.isSale}
       />
     );
     expect(screen.getByText(/987/)).toBeInTheDocument();
@@ -78,6 +104,8 @@ describe('Card', () => {
         text={data.text}
         price={data.price}
         likes={data.likes}
+        isAvailable={data.isAvailable}
+        isSale={data.isSale}
       />
     );
     const likeButton = screen.getByRole('like') as HTMLSpanElement;

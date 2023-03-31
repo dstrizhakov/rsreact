@@ -7,6 +7,7 @@ const MyTitleInput: FC<IInputProps> = ({ register, errors }) => {
     <div className={errors?.title ? 'input error' : 'input'}>
       <label htmlFor="title">Enter title:</label>
       <input
+        data-testid="title"
         id="title"
         type="text"
         {...register('title', {

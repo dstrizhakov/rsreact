@@ -2,7 +2,7 @@ import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
 export interface IProduct {
   id: string;
-  image?: string | FileList;
+  image?: string;
   type?: string;
   title: string;
   text: string;

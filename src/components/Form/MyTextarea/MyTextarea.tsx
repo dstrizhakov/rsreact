@@ -7,6 +7,7 @@ const MyTextarea: FC<IInputProps> = ({ register, errors }) => {
     <div className={errors?.text ? 'textarea error' : 'textarea'}>
       <label htmlFor="text">Description:</label>
       <textarea
+        data-testid="text"
         id="text"
         {...register('text', {
           required: 'Enter details...',

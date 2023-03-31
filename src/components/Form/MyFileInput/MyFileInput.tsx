@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import '../MyInput/MyInput';
+import './MyFileInput';
 
 const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
   function isValidFile(files: FileList) {
@@ -14,6 +14,7 @@ const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
     <div className={errors?.file ? 'input error' : 'input'}>
       <label htmlFor="file">Select file:</label>
       <input
+        data-testid="file"
         id="file"
         type="file"
         accept="image/*"

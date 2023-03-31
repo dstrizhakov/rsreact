@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>36/36</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>36/36</span>
             </div>
         
             
@@ -99,85 +99,76 @@
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, ReactNode } from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC, useState } from 'react';
 import styles from './Card.module.scss';
-import like from '../../assets/heart-icon.svg';
+import likeIcon from '../../assets/heart-icon.svg';
 import { IProduct } from 'types/Types';
 &nbsp;
-type CardState = {
-  likes: number;
-};
+const Card: FC&lt;IProduct&gt; = ({ image, title, text, price, likes, isAvailable, isSale }) =&gt; {
+  const [like, setLike] = useState(likes ?? 0);
 &nbsp;
-class Card extends Component&lt;IProduct, CardState&gt; {
-  state = { likes: this.props.likes || 0 };
-  increment = (): void =&gt; {
-    this.setState({ likes: this.state.likes + 1 });
+  const increment = (): void =&gt; {
+    setLike((prev) =&gt; prev + 1);
   };
-  render(): ReactNode {
-    return (
-      &lt;div className={styles.card}&gt;
-        &lt;div className={styles.body}&gt;
-          &lt;div className={styles.image}&gt;
-            &lt;img src={this.props.image} alt="this.props.image" /&gt;
-          &lt;/div&gt;
-          &lt;div className={styles.content}&gt;
-            &lt;h2&gt;{this.props.title}&lt;/h2&gt;
-            &lt;p data-testid="custom-element"&gt;{this.props.text}&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div className={styles.actions}&gt;
-            &lt;span role="like" onClick={this.increment}&gt;
-              &lt;img src={like} alt="like" /&gt;
-              {this.state.likes}
-            &lt;/span&gt;
-            &lt;h3&gt;{this.props.price}USD&lt;/h3&gt;
-          &lt;/div&gt;
+&nbsp;
+  return (
+    &lt;div className={styles.card}&gt;
+      &lt;div className={styles.body}&gt;
+        {isSale &amp;&amp; &lt;span className={styles.sale}&gt;Sale&lt;/span&gt;}
+        &lt;div className={styles.image}&gt;
+          &lt;img src={image} alt="image" /&gt;
+        &lt;/div&gt;
+        &lt;div className={styles.content}&gt;
+          &lt;h2&gt;{title}&lt;/h2&gt;
+          &lt;p data-testid="custom-element"&gt;{text}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div className={styles.actions}&gt;
+          &lt;span role="like" onClick={increment}&gt;
+            &lt;img src={likeIcon} alt="like" /&gt;
+            {like}
+          &lt;/span&gt;
+          {isAvailable ? &lt;h3&gt;{price}USD&lt;/h3&gt; : &lt;h3&gt;Not Avail&lt;/h3&gt;}
         &lt;/div&gt;
       &lt;/div&gt;
-    );
-  }
-}
+    &lt;/div&gt;
+  );
+};
 &nbsp;
 export default Card;
 &nbsp;</pre></td></tr></table></pre>
@@ -187,7 +178,7 @@ export default Card;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T21:52:38.959Z
+                at 2023-03-31T13:27:47.955Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

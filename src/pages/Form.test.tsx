@@ -4,18 +4,18 @@ import userEvent from '@testing-library/user-event';
 import Form from './Form';
 import { BrowserRouter } from 'react-router-dom';
 
-describe('FormPage', () => {
+describe('Form', () => {
   test('Checking first and second fields', async () => {
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.type(screen.getByLabelText(/Item title:/i), 'Dmitry');
-    await userEvent.type(screen.getByLabelText(/Item description:/i), 'Strizhakov');
-    expect(screen.getByLabelText(/Item title:/i)).toHaveValue('Dmitry');
-    expect(screen.getByLabelText(/Item description:/i)).toHaveValue('Strizhakov');
+    await userEvent.type(screen.getByLabelText(/Enter title:/i), 'Dmitry');
+    await userEvent.type(screen.getByLabelText(/Description:/i), 'Strizhakov');
+    expect(screen.getByLabelText(/Enter title:/i)).toHaveValue('Dmitry');
+    expect(screen.getByLabelText(/Description:/i)).toHaveValue('Strizhakov');
   });
   test('Set date', async () => {
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.type(screen.getByLabelText(/date/i), '2023-03-26');
-    expect(screen.getByLabelText(/date/i)).toHaveValue('2023-03-26');
+    await userEvent.type(screen.getByLabelText(/Created at:/i), '2023-03-26');
+    expect(screen.getByLabelText(/Created at:/i)).toHaveValue('2023-03-26');
   });
   test('Checking select work', async () => {
     render(<Form />, { wrapper: BrowserRouter });
@@ -32,47 +32,44 @@ describe('FormPage', () => {
   });
   test('Checking price field', async () => {
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.type(screen.getByLabelText(/Item price:/i), '987');
-    expect(screen.getByLabelText(/Item price:/i)).toHaveValue('987');
+    await userEvent.type(screen.getByLabelText(/Enter price:/i), '987');
+    expect(screen.getByLabelText(/Enter price:/i)).toHaveValue('987');
   });
-  test('Checking Availability switch work', async () => {
+  test('Checking Availability switch', async () => {
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.click(screen.getByTestId('availability'));
-    expect(screen.getByTestId('availability')).toBeChecked();
+    await userEvent.click(screen.getByTestId('isAvailable'));
+    expect(screen.getByTestId('isAvailable')).toBeChecked();
   });
   test('Checking Sale switch work', async () => {
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.click(screen.getByTestId('sale'));
-    expect(screen.getByTestId('sale')).toBeChecked();
+    await userEvent.click(screen.getByTestId('isSale'));
+    expect(screen.getByTestId('isSale')).toBeChecked();
   });
-
   test('Create product card', async () => {
-    const file = new File(['Some test file'], 'test.jpg', { type: 'image/jpg' });
+    const file = new File(['Some test file'], 'test.jpg', { type: 'image/jpeg' });
     window.URL.createObjectURL = vi.fn();
     render(<Form />, { wrapper: BrowserRouter });
-    await userEvent.type(screen.getByLabelText(/Item title:/i), 'Title');
-    expect(screen.getByLabelText(/Item title:/i)).toHaveValue('Title');
-    await userEvent.type(screen.getByLabelText(/Item description:/i), 'Some description');
-    expect(screen.getByLabelText(/Item description:/i)).toHaveValue('Some description');
-    await userEvent.type(screen.getByLabelText(/date/i), '2023-03-26');
-    expect(screen.getByLabelText(/date/i)).toHaveValue('2023-03-26');
-    await userEvent.selectOptions(screen.getByLabelText(/Type:/i), 'Watercolor');
+    await userEvent.type(screen.getByTestId('title'), 'Title');
+    expect(screen.getByTestId('title')).toHaveValue('Title');
+    await userEvent.type(screen.getByTestId('text'), 'Some description');
+    expect(screen.getByTestId('text')).toHaveValue('Some description');
+    await userEvent.type(screen.getByTestId('created'), '2023-01-26');
+    expect(screen.getByTestId('created')).toHaveValue('2023-01-26');
+    await userEvent.selectOptions(screen.getByTestId('type'), 'Watercolor');
     expect(screen.getByText<HTMLOptionElement>(/Watercolor/i).selected).toBe(true);
-    await userEvent.upload(screen.getByLabelText(/File:/i), file);
+    await userEvent.upload(screen.getByTestId('file'), file);
     expect(screen.getByLabelText<HTMLInputElement>(/File:/i).files?.[0]).toStrictEqual(file);
     expect(screen.getByLabelText<HTMLInputElement>(/File:/i).files?.item(0)).toStrictEqual(file);
     expect(screen.getByLabelText<HTMLInputElement>(/File:/i).files).toHaveLength(1);
-    await userEvent.type(screen.getByLabelText(/Item price:/i), '678');
-    expect(screen.getByLabelText(/Item price:/i)).toHaveValue('678');
-    await userEvent.click(screen.getByTestId('availability'));
-    await userEvent.click(screen.getByTestId('sale'));
-    expect(screen.getByTestId('availability')).toBeChecked();
-    expect(screen.getByTestId('sale')).toBeChecked();
+    await userEvent.type(screen.getByTestId('price'), '678');
+    expect(screen.getByTestId('price')).toHaveValue('678');
+    await userEvent.click(screen.getByTestId('isAvailable'));
+    await userEvent.click(screen.getByTestId('isSale'));
+    expect(screen.getByTestId('isAvailable')).toBeChecked();
+    expect(screen.getByTestId('isSale')).toBeChecked();
     await userEvent.click(screen.getByRole('button'));
-
-    // ?почему отсутствует карточка после сабмита
-    // const cards = screen.getAllByTestId('custom-element');
-    // console.log(cards);
-    // expect(cards[0]).toHaveTextContent('Some description');
+    // Должна появиться новая карточка товара:
+    const cards = screen.getAllByTestId('custom-element');
+    expect(cards[0]).toHaveTextContent('Some description');
   });
 });

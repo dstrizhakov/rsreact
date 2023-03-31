@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>29/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>29/29</span>
             </div>
         
             
@@ -87,52 +87,67 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, ReactNode } from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
+import { IInputProps } from 'types/Types';
 import './MyTextarea.scss';
 &nbsp;
-interface ITextareaStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject&lt;HTMLTextAreaElement&gt;;
-  error: string;
-  isValid: boolean;
-}
-&nbsp;
-class MyTextarea extends Component&lt;ITextareaStateProps&gt; {
-  render(): ReactNode {
-    return (
-      &lt;div className={this.props.isValid ? <span class="branch-0 cbranch-no" title="branch not covered" >'textarea' : 'textarea error'}&gt;</span>
-        &lt;label htmlFor={this.props.id}&gt;{this.props.title}&lt;/label&gt;
-        &lt;textarea ref={this.props.refer} id={this.props.id} /&gt;
-        &lt;span&gt;{this.props.error}&lt;/span&gt;
-      &lt;/div&gt;
-    );
-  }
-}
+const MyTextarea: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
+  return (
+    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >text ? 'textarea error' : '</span>textarea'}&gt;
+      &lt;label htmlFor="text"&gt;Description:&lt;/label&gt;
+      &lt;textarea
+        data-testid="text"
+        id="text"
+        {...register('text', {
+          required: 'Enter details...',
+          minLength: {
+            value: 10,
+            message: 'Min length is 10 symbols...',
+          },
+          maxLength: {
+            value: 200,
+            message: 'Max length is 200 symbols...',
+          },
+        })}
+      /&gt;
+      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >text &amp;&amp; &lt;span&gt;{errors?.text?.message || 'Error'}&lt;/span&gt;}</span>
+    &lt;/div&gt;
+  );
+};
 &nbsp;
 export default MyTextarea;
 &nbsp;</pre></td></tr></table></pre>
@@ -142,7 +157,7 @@ export default MyTextarea;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T21:52:38.959Z
+                at 2023-03-31T13:27:47.955Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

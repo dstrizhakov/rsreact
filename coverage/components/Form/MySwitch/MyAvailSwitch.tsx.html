@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/Form/MySwitch/MySwitch.tsx</title>
+    <title>Code coverage report for components/Form/MySwitch/MyAvailSwitch.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/Form/MySwitch</a> MySwitch.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/Form/MySwitch</a> MyAvailSwitch.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>31/31</span>
+                <span class='fraction'>24/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>31/31</span>
+                <span class='fraction'>24/24</span>
             </div>
         
             
@@ -87,75 +87,54 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, ReactNode } from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
+import { IInputProps } from 'types/Types';
 import './MySwitch.scss';
 &nbsp;
-export interface IInputStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject&lt;HTMLInputElement&gt;;
-  error: string;
-  isValid: boolean;
-}
+const MyAvailSwitch: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
+  return (
+    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >isAvailable ? 'switch error' : '</span>switch'}&gt;
+      &lt;p&gt;Available:&lt;/p&gt;
+      &lt;input
+        data-testid="isAvailable"
+        id="isAvailable"
+        type="checkbox"
+        className="checkbox"
+        {...register('isAvailable', {
+          required: 'Product should be avail',
+        })}
+      &gt;&lt;/input&gt;
+      &lt;label htmlFor="isAvailable"&gt;&lt;/label&gt;
+      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >isAvailable &amp;&amp; &lt;span&gt;{errors?.isAvailable?.message || 'Error'}&lt;/span&gt;}</span>
+    &lt;/div&gt;
+  );
+};
 &nbsp;
-class MySwitch extends Component&lt;IInputStateProps&gt; {
-  render(): ReactNode {
-    return (
-      &lt;div className={this.props.isValid ? <span class="branch-0 cbranch-no" title="branch not covered" >'switch' : 'switch error'}&gt;</span>
-        &lt;p&gt;{this.props.title}&lt;/p&gt;
-        &lt;input
-          data-testid={this.props.id}
-          ref={this.props.refer}
-          id={this.props.id}
-          type="checkbox"
-          className="checkbox"
-        &gt;&lt;/input&gt;
-        &lt;label htmlFor={this.props.id}&gt;&lt;/label&gt;
-        &lt;span&gt;{this.props.error}&lt;/span&gt;
-      &lt;/div&gt;
-    );
-  }
-}
-&nbsp;
-export default MySwitch;
+export default MyAvailSwitch;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -163,7 +142,7 @@ export default MySwitch;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T21:52:38.959Z
+                at 2023-03-31T13:27:47.955Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

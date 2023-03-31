@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.77% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>30/31</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">37.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>3/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.77% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>30/31</span>
             </div>
         
             
@@ -87,52 +87,73 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, ReactNode } from 'react';
-import '../MyInput/MyInput';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
+import { IInputProps } from 'types/Types';
+import './MyFileInput';
 &nbsp;
-export interface IInputStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject&lt;HTMLInputElement&gt;;
-  error: string;
-  isValid: boolean;
-}
-&nbsp;
-class MyFileInput extends Component&lt;IInputStateProps&gt; {
-  render(): ReactNode {
-    return (
-      &lt;div className={this.props.isValid ? 'input' : 'input error'}&gt;
-        &lt;label htmlFor={this.props.id}&gt;{this.props.title}&lt;/label&gt;
-        &lt;input ref={this.props.refer} id={this.props.id} type="file" /&gt;
-        &lt;span&gt;{this.props.error}&lt;/span&gt;
-      &lt;/div&gt;
-    );
+const MyFileInput: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
+  function isValidFile(files: FileList) {
+    const typeFile = files[0].type;
+    if (typeFile === <span class="branch-0 cbranch-no" title="branch not covered" >'image/jpeg' || typeFile === 'image/png') {</span>
+      return true;
+<span class="branch-0 cbranch-no" title="branch not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    return false;</span>
   }
-}
+  return (
+    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >file ? 'input error' : '</span>input'}&gt;
+      &lt;label htmlFor="file"&gt;Select file:&lt;/label&gt;
+      &lt;input
+        data-testid="file"
+        id="file"
+        type="file"
+        accept="image/*"
+        {...register('file', {
+          required: 'Attach the image file',
+          validate: (file) =&gt; isValidFile(file<span class="branch-0 cbranch-no" title="branch not covered" >) || `Image file *jpeg or *png only accepted...`,</span>
+        })}
+      /&gt;
+      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >file &amp;&amp; &lt;span&gt;{errors?.file?.message || 'Error'}&lt;/span&gt;}</span>
+    &lt;/div&gt;
+  );
+};
 &nbsp;
 export default MyFileInput;
 &nbsp;</pre></td></tr></table></pre>
@@ -142,7 +163,7 @@ export default MyFileInput;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T21:52:38.959Z
+                at 2023-03-31T13:27:47.955Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

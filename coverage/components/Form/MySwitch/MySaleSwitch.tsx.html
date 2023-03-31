@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/Form/MyDateInput/MyDateInput.tsx</title>
+    <title>Code coverage report for components/Form/MySwitch/MySaleSwitch.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/Form/MyDateInput</a> MyDateInput.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/Form/MySwitch</a> MySaleSwitch.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -85,15 +85,11 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">10x</span>
@@ -113,28 +109,26 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import { isValidDate } from '../../../utils/formUtils';
-import './MyDateInput';
+import './MySwitch.scss';
 &nbsp;
-const MyDateInput: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
+const MySaleSwitch: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
   return (
-    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >created ? 'input error' : '</span>input'}&gt;
-      &lt;label htmlFor="created"&gt;Created at:&lt;/label&gt;
+    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >isSale ? 'switch error' : '</span>switch'}&gt;
+      &lt;p&gt;Sale:&lt;/p&gt;
       &lt;input
-        data-testid="created"
-        id="created"
-        type="date"
-        {...register('created', {
-          required: 'Enter created date...',
-          validate: (date) =&gt; isValidDate(date<span class="branch-0 cbranch-no" title="branch not covered" >) || `Entered date is in the future!`,</span>
-        })}
-      /&gt;
-      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >created &amp;&amp; &lt;span&gt;{errors?.created?.message || 'Error'}&lt;/span&gt;}</span>
+        data-testid="isSale"
+        id="isSale"
+        type="checkbox"
+        className="checkbox"
+        {...register('isSale', {})}
+      &gt;&lt;/input&gt;
+      &lt;label htmlFor="isSale"&gt;&lt;/label&gt;
+      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >isSale &amp;&amp; &lt;span&gt;{errors?.isSale?.message || 'Error'}&lt;/span&gt;}</span>
     &lt;/div&gt;
   );
 };
 &nbsp;
-export default MyDateInput;
+export default MySaleSwitch;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

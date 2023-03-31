@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>30/30</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>30/30</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
@@ -91,66 +91,60 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, ReactNode } from 'react';
-import '../MyInput/MyInput';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
+import { IInputProps } from 'types/Types';
+import './MySelect';
 &nbsp;
-export interface ISelectStateProps {
-  id: string;
-  title: string;
-  refer: React.RefObject&lt;HTMLSelectElement&gt;;
-  error: string;
-  isValid: boolean;
-}
-&nbsp;
-class MySelect extends Component&lt;ISelectStateProps&gt; {
-  render(): ReactNode {
-    return (
-      &lt;div className={this.props.isValid ? <span class="branch-0 cbranch-no" title="branch not covered" >'input' : 'input error'}&gt;</span>
-        &lt;label htmlFor={this.props.id}&gt;{this.props.title}&lt;/label&gt;
-        &lt;select ref={this.props.refer} id={this.props.id}&gt;
-          &lt;option value="Oil on canvas"&gt;Oil on canvas&lt;/option&gt;
-          &lt;option value="Acrylic on canvas"&gt;Acrylic on canvas&lt;/option&gt;
-          &lt;option value="Watercolor"&gt;Watercolor&lt;/option&gt;
-          &lt;option value="Oil on cardboard"&gt;Oil on cardboard&lt;/option&gt;
-          &lt;option value="Acrylic on cardboard"&gt;Acrylic on cardboard&lt;/option&gt;
-        &lt;/select&gt;
-        &lt;span&gt;{this.props.error}&lt;/span&gt;
-      &lt;/div&gt;
-    );
-  }
-}
+const MySelect: FC&lt;IInputProps&gt; = ({ register, errors }) =&gt; {
+  return (
+    &lt;div className={errors?.<span class="branch-0 cbranch-no" title="branch not covered" >type ? 'input error' : '</span>input'}&gt;
+      &lt;label htmlFor="type"&gt;Select type:&lt;/label&gt;
+      &lt;select
+        data-testid="type"
+        id="type"
+        {...register('type', {
+          required: 'Select some type...',
+        })}
+      &gt;
+        &lt;option selected value=""&gt;&lt;/option&gt;
+        &lt;option value="Oil on canvas"&gt;Oil on canvas&lt;/option&gt;
+        &lt;option value="Acrylic on canvas"&gt;Acrylic on canvas&lt;/option&gt;
+        &lt;option value="Watercolor"&gt;Watercolor&lt;/option&gt;
+        &lt;option value="Oil on cardboard"&gt;Oil on cardboard&lt;/option&gt;
+        &lt;option value="Acrylic on cardboard"&gt;Acrylic on cardboard&lt;/option&gt;
+      &lt;/select&gt;
+      {errors?.<span class="branch-0 cbranch-no" title="branch not covered" >type &amp;&amp; &lt;span&gt;{errors?.type?.message || 'Error'}&lt;/span&gt;}</span>
+    &lt;/div&gt;
+  );
+};
 &nbsp;
 export default MySelect;
 &nbsp;</pre></td></tr></table></pre>
@@ -160,7 +154,7 @@ export default MySelect;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T21:52:38.959Z
+                at 2023-03-31T13:27:47.955Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

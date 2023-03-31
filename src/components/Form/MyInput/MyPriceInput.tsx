@@ -7,6 +7,7 @@ const MyPriceInput: FC<IInputProps> = ({ register, errors }) => {
     <div className={errors?.price ? 'input error' : 'input'}>
       <label htmlFor="price">Enter price:</label>
       <input
+        data-testid="price"
         id="price"
         type="text"
         {...register('price', {

@@ -11,9 +11,11 @@ import MyTitleInput from '../MyInput/MyTitleInput';
 import MyAvailSwitch from '../MySwitch/MyAvailSwitch';
 import MySaleSwitch from '../MySwitch/MySaleSwitch';
 import MyPriceInput from '../MyInput/MyPriceInput';
+import Modal from '../../Modal/Modal';
 
 const ProductHookForm = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
+  const [modal, setModal] = useState(false);
 
   const updateProducts = (newProduct: IProduct) => {
     const updatedProducts = [...products, newProduct];
@@ -31,16 +33,20 @@ const ProductHookForm = () => {
   });
 
   const onSubmit = (newProduct: IForm) => {
-    console.log(newProduct);
+    setModal(true);
     newProduct.image = URL.createObjectURL(newProduct.file![0]);
     updateProducts(newProduct);
-    // setShowConfirm(true);
-    // setTimeout(() => setShowConfirm(false), 2000);
     reset();
+    setTimeout(() => setModal(false), 1500);
   };
 
   return (
     <div className={styles.wrapper}>
+      {modal && (
+        <Modal isOpen={modal} setIsOpen={setModal}>
+          <h1>Form submitted!</h1>
+        </Modal>
+      )}
       <div className={styles.body}>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           <MyTitleInput register={register} errors={errors} />
