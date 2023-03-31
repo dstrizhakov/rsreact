@@ -16,6 +16,10 @@ const MyTitleInput: FC<IInputProps> = ({ register, errors }) => {
             value: 3,
             message: 'Lenght should be at least 3',
           },
+          maxLength: {
+            value: 50,
+            message: 'Max length is 50 symbols...',
+          },
           pattern: {
             value: /^[\w-]+$/,
             message: 'Letters, numbers and dash only are allowed',

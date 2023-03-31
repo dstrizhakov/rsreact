@@ -29,7 +29,7 @@ const products = [
     price: '100',
     likes: 10,
     created: '04.06.14',
-    isAvailable: true,
+    isAvailable: false,
     isSale: false,
   },
 ];

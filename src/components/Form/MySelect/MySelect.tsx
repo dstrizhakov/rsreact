@@ -9,6 +9,7 @@ const MySelect: FC<IInputProps> = ({ register, errors }) => {
       <select
         data-testid="type"
         id="type"
+        defaultValue=""
         {...register('type', {
           required: 'Select some type...',
         })}
