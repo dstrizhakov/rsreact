@@ -1,7 +1,11 @@
 import { FC, useEffect, useState } from 'react';
 import styles from './Search.module.scss';
 
-const Search: FC = () => {
+type SearchProps = {
+  handleSetQuery: (newQuery: string) => void;
+};
+
+const Search: FC<SearchProps> = ({ handleSetQuery }) => {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
@@ -18,6 +22,13 @@ const Search: FC = () => {
     setQuery(event.target.value);
   };
 
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (query.length >= 3) {
+      handleSetQuery(query);
+    }
+  };
+
   const saveToLocalStotage = (): void => {
     localStorage.setItem('Query', query);
   };
@@ -29,7 +40,7 @@ const Search: FC = () => {
 
   return (
     <div className={styles.body}>
-      <form onSubmit={(event) => event.preventDefault()} className={styles.form}>
+      <form onSubmit={(event) => onSubmit(event)} className={styles.form}>
         <div className={styles.search}>
           <input
             role="search"

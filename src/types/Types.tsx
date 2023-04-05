@@ -57,3 +57,19 @@ export interface IForm {
   isAvailable: boolean;
   isSale?: boolean;
 }
+
+interface IUrls {
+  regilar: string;
+  small: string;
+}
+interface IUser {
+  name: string;
+}
+export interface IUnsplashItem {
+  id: string;
+  urls: IUrls;
+  user: IUser;
+  description?: string;
+  likes: number;
+  created_at: string;
+}
