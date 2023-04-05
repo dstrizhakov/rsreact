@@ -13,6 +13,7 @@ const ProductList: FC<ProductListProps> = (props) => {
       key={product.id}
       id={product.id}
       image={product.image}
+      big={product.big}
       title={product.title}
       text={product.text}
       price={product.price}

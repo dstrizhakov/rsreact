@@ -3,6 +3,7 @@ import { FieldErrors, UseFormRegister } from 'react-hook-form';
 export interface IProduct {
   id: string;
   image?: string;
+  big?: string;
   type?: string;
   title: string;
   text: string;
@@ -59,7 +60,7 @@ export interface IForm {
 }
 
 interface IUrls {
-  regilar: string;
+  regular: string;
   small: string;
 }
 interface IUser {
