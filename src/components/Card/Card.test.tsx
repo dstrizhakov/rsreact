@@ -14,7 +14,7 @@ const data = {
 };
 
 describe('Card', () => {
-  it('should have headline', () => {
+  it('should have all content', () => {
     render(
       <Card
         key={data.id}
@@ -28,40 +28,12 @@ describe('Card', () => {
         isSale={data.isSale}
       />
     );
-    expect(screen.getByText(/Test title/)).toBeInTheDocument();
+    expect(screen.getByTestId('card-title')).toHaveTextContent(/Test title/);
+    expect(screen.getByTestId('card-text')).toHaveTextContent(/Lorem ipsum dolor/);
+    expect(screen.getByTestId('card-price')).toHaveTextContent(/12345/);
+    expect(screen.getByTestId('card-like')).toHaveTextContent(/987/);
   });
-  it('should have text', () => {
-    render(
-      <Card
-        key={data.id}
-        id={data.id}
-        image={data.image}
-        title={data.title}
-        text={data.text}
-        price={data.price}
-        likes={data.likes}
-        isAvailable={data.isAvailable}
-        isSale={data.isSale}
-      />
-    );
-    expect(screen.getByText(/Lorem ipsum dolor/)).toBeInTheDocument();
-  });
-  it('should have price', () => {
-    render(
-      <Card
-        key={data.id}
-        id={data.id}
-        image={data.image}
-        title={data.title}
-        text={data.text}
-        price={data.price}
-        likes={data.likes}
-        isAvailable={data.isAvailable}
-        isSale={data.isSale}
-      />
-    );
-    expect(screen.getByText(/12345/)).toBeInTheDocument();
-  });
+
   it('should have not avail text', () => {
     render(
       <Card
@@ -76,24 +48,9 @@ describe('Card', () => {
         isSale={data.isSale}
       />
     );
-    expect(screen.getByText(/Not Avail/)).toBeInTheDocument();
+    expect(screen.getByTestId('card-price-na')).toHaveTextContent(/Not Avail/);
   });
-  it('should have likes', () => {
-    render(
-      <Card
-        key={data.id}
-        id={data.id}
-        image={data.image}
-        title={data.title}
-        text={data.text}
-        price={data.price}
-        likes={data.likes}
-        isAvailable={data.isAvailable}
-        isSale={data.isSale}
-      />
-    );
-    expect(screen.getByText(/987/)).toBeInTheDocument();
-  });
+
   it('likes should inrement by click', () => {
     render(
       <Card
@@ -108,7 +65,7 @@ describe('Card', () => {
         isSale={data.isSale}
       />
     );
-    const likeButton = screen.getByRole('like') as HTMLSpanElement;
+    const likeButton = screen.getByTestId('card-like') as HTMLSpanElement;
     expect(likeButton.innerHTML).toBe(`<img src="/src/assets/heart-icon.svg" alt="like">987`);
     fireEvent.click(likeButton);
     expect(likeButton.innerHTML).toBe(`<img src="/src/assets/heart-icon.svg" alt="like">988`);

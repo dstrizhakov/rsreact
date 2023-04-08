@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+	"msw.workerDirectory": "/public/mockServiceWorker.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -53,9 +54,13 @@
     "husky": "^8.0.3",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.0",
+    "msw": "^1.2.1",
     "prettier": "^2.8.4",
     "typescript": "^5.0.2",
     "vite": "^4.2.0",
     "vitest": "^0.29.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

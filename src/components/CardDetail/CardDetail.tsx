@@ -39,6 +39,9 @@ const CardDetail: FC<IProduct> = ({
               <img src={likeIcon} alt="like" />
               {like}
             </span>
+            <a href={big} target="_blank" download rel="noreferrer">
+              Download link
+            </a>
             {isAvailable ? <h3>Price: {price}USD</h3> : <h3>Not Avail</h3>}
           </div>
         </div>

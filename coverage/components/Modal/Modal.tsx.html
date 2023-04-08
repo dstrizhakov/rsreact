@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>20/20</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/3</span>
+                <span class='fraction'>1/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>20/20</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
@@ -83,7 +83,14 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -93,29 +100,43 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react';
-import './Modal.scss';
+import styles from './Modal.module.scss';
 &nbsp;
 type ModalPropsType = {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) =&gt; void;
   children: React.ReactNode;
+  variant?: 'simple' | 'button';
 };
 &nbsp;
-const Modal: FC&lt;ModalPropsType&gt; = ({ isOpen, setIsOpen, children }) =&gt; {
+const Modal: FC&lt;ModalPropsType&gt; = ({ isOpen, setIsOpen, children, variant = 'button' }) =&gt; {
   return (
-    &lt;div className={isOpen ? <span class="branch-0 cbranch-no" title="branch not covered" >'modal active' : 'modal'} o</span>nClick={<span class="fstat-no" title="function not covered" >() =&gt; setIsOpen(false)}&gt;</span>
-      &lt;div className="modal__content" onClick={<span class="fstat-no" title="function not covered" >(e) =&gt; e.stopPropagation()}&gt;</span>
+    &lt;div className={isOpen ? styles.modal__active : styles.modal} onClick={<span class="fstat-no" title="function not covered" >() =&gt; setIsOpen(false)}&gt;</span>
+      &lt;div className={styles.content} onClick={<span class="fstat-no" title="function not covered" >(e) =&gt; e.stopPropagation()}&gt;</span>
+        &lt;span
+          className={variant === 'button' ? styles.close : styles.none}
+          onClick={<span class="fstat-no" title="function not covered" >() =&gt; setIsOpen(false)}</span>
+        &gt;
+          х
+        &lt;/span&gt;
         {children}
       &lt;/div&gt;
     &lt;/div&gt;
@@ -130,7 +151,7 @@ export default Modal;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-31T13:27:47.955Z
+                at 2023-04-08T12:17:56.373Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

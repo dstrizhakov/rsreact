@@ -23,6 +23,9 @@ const Card: FC<IProduct> = ({
   const increment = (): void => {
     setLike((prev) => prev + 1);
   };
+  const handleClick = () => {
+    setModal(true);
+  };
 
   return (
     <>
@@ -40,22 +43,26 @@ const Card: FC<IProduct> = ({
           isSale={isSale}
         />
       </Modal>
-      <div className={styles.card} onClick={() => setModal(true)}>
+      <div className={styles.card} onClick={() => handleClick()}>
         <div className={styles.body}>
           {isSale && <span className={styles.sale}>Sale</span>}
           <div className={styles.image}>
             <img src={image} alt="image" />
           </div>
           <div className={styles.content}>
-            <h2>{title}</h2>
-            <p data-testid="custom-element">{text}</p>
+            <h2 data-testid="card-title">{title}</h2>
+            <p data-testid="card-text">{text}</p>
           </div>
           <div className={styles.actions}>
-            <span role="like" onClick={increment}>
+            <span data-testid="card-like" role="like" onClick={increment}>
               <img src={likeIcon} alt="like" />
               {like}
             </span>
-            {isAvailable ? <h3>{price}USD</h3> : <h3>Not Avail</h3>}
+            {isAvailable ? (
+              <h3 data-testid="card-price">{price}USD</h3>
+            ) : (
+              <h3 data-testid="card-price-na">Not Avail</h3>
+            )}
           </div>
         </div>
       </div>
