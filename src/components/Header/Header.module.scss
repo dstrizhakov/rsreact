@@ -1,0 +1,31 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+width: 900px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+.body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav a {
+	padding: 5px 0;
+	margin-left: 15px;
+	font-size: 18px;
+}
+
+.logo a{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

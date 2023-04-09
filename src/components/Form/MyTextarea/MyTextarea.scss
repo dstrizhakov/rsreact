@@ -1,0 +1,28 @@
+.textarea {
+	position: relative;
+}
+.textarea textarea {
+	width: 100%;
+	font-size: 1rem;
+	padding: 0.6rem;
+	border: 1px solid rgba(0, 128, 128, 0.3);
+  outline-color: rgba(0, 128, 128, 0.5);
+  border-radius: 0.3rem;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+.textarea span {
+	display: none;
+	font-size: 0.7rem;
+	padding-left: 5px;
+}
+.textarea.error span {
+	display: block;
+	position: absolute;
+	color: red;
+	bottom: 5px;
+}
+.textarea.error textarea {
+	border: 1px solid rgb(255, 3, 108);
+  outline-color: rgb(255, 3, 108);
+}
