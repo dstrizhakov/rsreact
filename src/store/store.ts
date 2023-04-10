@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { unsplashAPI } from 'services/unsplashService';
+import { unsplashAPI } from '../services/unsplashService';
 import homeReducer from './reducers/Home/home.slice';
 import productsReducer from './reducers/Products/products.slice';
 

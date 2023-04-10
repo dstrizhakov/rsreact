@@ -1,41 +1,26 @@
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { setQuery } from '../../store/reducers/Home/home.slice';
 import { FC, useEffect, useState } from 'react';
 import styles from './Search.module.scss';
 
-type SearchProps = {
-  handleSetQuery: (newQuery: string) => void;
-};
-
-const Search: FC<SearchProps> = ({ handleSetQuery }) => {
-  const [query, setQuery] = useState('');
+const Search: FC = () => {
+  const [search, setSearch] = useState('');
+  const dispatch = useAppDispatch();
+  const currentQuery = useAppSelector((store) => store.homeReducer.query);
 
   useEffect(() => {
-    getFromLocalStorage();
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      saveToLocalStotage();
-    };
-  });
+    setSearch(currentQuery);
+  }, [currentQuery]);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    setQuery(event.target.value);
+    setSearch(event.target.value);
   };
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (query.length >= 3) {
-      handleSetQuery(query);
+    if (search.length >= 3) {
+      dispatch(setQuery(search));
     }
-  };
-
-  const saveToLocalStotage = (): void => {
-    localStorage.setItem('Query', query);
-  };
-
-  const getFromLocalStorage = (): void => {
-    const savedQuery = localStorage.getItem('Query') || '';
-    setQuery(savedQuery);
   };
 
   return (
@@ -47,7 +32,7 @@ const Search: FC<SearchProps> = ({ handleSetQuery }) => {
             type="text"
             placeholder="Search query..."
             onChange={onChange}
-            value={query}
+            value={search}
           />
           <span>Error. Search query should be not empty.</span>
         </div>
