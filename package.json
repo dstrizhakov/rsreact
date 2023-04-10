@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-	"msw.workerDirectory": "/public/mockServiceWorker.js",
+  "msw.workerDirectory": "/public/mockServiceWorker.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -27,11 +27,14 @@
     ]
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
+    "@types/react-redux": "^7.1.25",
     "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
     "sass": "^1.59.3"
   },
