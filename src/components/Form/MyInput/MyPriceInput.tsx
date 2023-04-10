@@ -14,7 +14,7 @@ const MyPriceInput: FC<IInputProps> = ({ register, errors }) => {
           required: 'Enter correct price...',
           pattern: {
             value: /^[0-9]*[.,]?[0-9]+$/,
-            message: 'Only numers accepted...',
+            message: 'Only numers...',
           },
         })}
       />

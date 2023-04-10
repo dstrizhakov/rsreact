@@ -1,3 +1,5 @@
+@import '../../../styles/colors';
+
 .input {
 	position: relative;
 }
@@ -23,12 +25,12 @@
 .input.error span {
 	display: block;
 	position: absolute;
-	color: red;
+	color: $color-danger;
 	bottom: 5px;
 }
 
 .input.error input,
 .input.error select {
-	border: 1px solid rgb(255, 3, 108);
-  outline-color: rgb(255, 3, 108);
+	border: 1px solid $color-danger;
+  outline-color: $color-danger;
 }

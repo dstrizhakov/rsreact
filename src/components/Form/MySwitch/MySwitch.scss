@@ -1,3 +1,5 @@
+@import '../../../styles/colors';
+
 .switch {
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +12,7 @@ position: relative;
 top: 10px;
 }
 .switch.error p{
-color: red;
+color: $color-danger;
 	}
 
 	.switch span {
@@ -22,7 +24,7 @@ color: red;
 	.switch.error span {
 		display: block;
 		position: absolute;
-		color: red;
+		color: $color-danger;
 		bottom: -15px;
 		left: 10px;
 	}
