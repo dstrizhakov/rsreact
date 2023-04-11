@@ -1,3 +1,5 @@
+@import '../../styles/colors';
+
 .modal {
 	position: fixed;
 	top: 0;
@@ -32,7 +34,7 @@
 .content {
 	max-height: 90vh;
 	padding: 20px;
-	border-radius: 12px;
+	border-radius: 4px;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -41,19 +43,25 @@
 }
 .close {
 	cursor: pointer;
-	color: rgb(255, 255, 255);
+	color: white;
 	position: absolute;
-	top:10px;
-	right: 10px;
-	background-color: rgba(0, 0, 0, 0.6);
-	width: 20px;
-	height: 20px;
+	top:-20px;
+	right: -20px;
+	background-color: $color-active;
+	opacity: .9;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	z-index: 99;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		opacity: 1;
+	}
 }
+
 .none {
 	display: none;
 }

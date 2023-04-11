@@ -30,7 +30,7 @@ const Search: FC = () => {
           <input
             role="search"
             type="text"
-            placeholder="Search query..."
+            placeholder="Enter at least 3 symbols..."
             onChange={onChange}
             value={search}
           />

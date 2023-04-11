@@ -1,5 +1,3 @@
-import { FieldErrors, UseFormRegister } from 'react-hook-form';
-
 export interface IProduct {
   id: string;
   image?: string;
@@ -46,11 +44,6 @@ export interface ITextarea {
   error: string;
   isValid: boolean;
 }
-
-// export type IInputProps = {
-//   register: UseFormRegister<IForm>;
-//   errors: FieldErrors<IForm>;
-// };
 
 export interface IForm {
   id: string;

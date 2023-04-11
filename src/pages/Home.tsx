@@ -33,7 +33,7 @@ const Home: FC = () => {
     <div>
       <h1>Home</h1>
       <Search />
-      {isError && <h2>Ошибка API, смотри консоль...</h2>}
+      {isError && <p className="api-error">Ошибка API, введите коректный запрос...</p>}
       {isLoading ? <Preloader /> : <ProductList products={currentProducts || []} />}
     </div>
   );
