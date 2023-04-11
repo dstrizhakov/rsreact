@@ -1,22 +1,29 @@
+import { ERROR_MESSAGE } from '../../../constants/Constants';
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
 import { isValidDate } from '../../../utils/formUtils';
-import './MyDateInput';
+import '../MyInput/MyInput.scss';
+import { useFormContext } from 'react-hook-form';
+import { IInputProps } from 'types/Types';
 
-const MyDateInput: FC<IInputProps> = ({ register, errors }) => {
+const MyDateInput: FC<IInputProps> = ({ title, name }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.created ? 'input error' : 'input'}>
-      <label htmlFor="created">Created at:</label>
+      <label htmlFor={name}>{title}</label>
       <input
-        data-testid="created"
-        id="created"
+        data-testid={name}
+        id={name}
         type="date"
-        {...register('created', {
-          required: 'Enter created date...',
-          validate: (date) => isValidDate(date) || `Entered date is in the future!`,
+        {...register(name, {
+          required: ERROR_MESSAGE.REQUIRED,
+          validate: (date) => isValidDate(date) || ERROR_MESSAGE.DATE.MESSAGE,
         })}
       />
-      {errors?.created && <span>{errors?.created?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

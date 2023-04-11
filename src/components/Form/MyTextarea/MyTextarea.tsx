@@ -1,27 +1,34 @@
+import { ERROR_MESSAGE } from '../../../constants/Constants';
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
 import './MyTextarea.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MyTextarea: FC<IInputProps> = ({ register, errors }) => {
+const MyTextarea: FC<IInputProps> = ({ title, name, minLength, maxLength }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.text ? 'textarea error' : 'textarea'}>
-      <label htmlFor="text">Description:</label>
+      <label htmlFor={name}>{title}</label>
       <textarea
-        data-testid="text"
-        id="text"
-        {...register('text', {
-          required: 'Enter details...',
+        data-testid={name}
+        id={name}
+        {...register(name, {
+          required: ERROR_MESSAGE.DETAILS.REQUIRED,
           minLength: {
-            value: 10,
-            message: 'Min length is 10 symbols...',
+            value: minLength || 0,
+            message: ERROR_MESSAGE.DETAILS.MIN,
           },
           maxLength: {
-            value: 200,
-            message: 'Max length is 200 symbols...',
+            value: maxLength || 500,
+            message: ERROR_MESSAGE.DETAILS.MAX,
           },
         })}
       />
-      {errors?.text && <span>{errors?.text?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

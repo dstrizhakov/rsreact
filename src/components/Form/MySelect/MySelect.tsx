@@ -1,27 +1,38 @@
+import { ERROR_MESSAGE } from '../../../constants/Constants';
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
-import './MySelect';
+import '../MyInput/MyInput.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MySelect: FC<IInputProps> = ({ register, errors }) => {
+interface ISelectProps {
+  title: string;
+  name: string;
+  options?: string[];
+}
+
+const MySelect: FC<ISelectProps> = ({ title, name, options }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.type ? 'input error' : 'input'}>
-      <label htmlFor="type">Select type:</label>
+      <label htmlFor={name}>{title}</label>
       <select
-        data-testid="type"
-        id="type"
-        defaultValue=""
-        {...register('type', {
-          required: 'Select some type...',
+        data-testid={name}
+        id={name}
+        {...register(name, {
+          required: ERROR_MESSAGE.SELECT.REQUIRED,
         })}
       >
-        <option selected value=""></option>
-        <option value="Oil on canvas">Oil on canvas</option>
-        <option value="Acrylic on canvas">Acrylic on canvas</option>
-        <option value="Watercolor">Watercolor</option>
-        <option value="Oil on cardboard">Oil on cardboard</option>
-        <option value="Acrylic on cardboard">Acrylic on cardboard</option>
+        <option defaultValue="default" hidden></option>
+        {options?.map((elem) => (
+          <option key={elem} value={elem}>
+            {elem}
+          </option>
+        ))}
       </select>
-      {errors?.type && <span>{errors?.type?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

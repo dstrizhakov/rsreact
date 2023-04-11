@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import styles from './ProductForm.module.scss';
-import { IForm, IProduct } from 'types/Types';
+import { IForm } from 'types/Types';
 import MyTextarea from '../MyTextarea/MyTextarea';
-import ProductList from '../../ProductList/ProductList';
 import MySelect from '../MySelect/MySelect';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 import MyFileInput from '../MyFileInput/MyFileInput';
 import MyDateInput from '../MyDateInput/MyDateInput';
 import MyTitleInput from '../MyInput/MyTitleInput';
@@ -12,31 +11,24 @@ import MyAvailSwitch from '../MySwitch/MyAvailSwitch';
 import MySaleSwitch from '../MySwitch/MySaleSwitch';
 import MyPriceInput from '../MyInput/MyPriceInput';
 import Modal from '../../Modal/Modal';
+import { useAppDispatch } from '../../../hooks/redux';
+import { addProduct } from '../../../store/reducers/Products/products.slice';
+import { convertFormProductToProduct } from '../../../utils/formUtils';
+import { REGEX_NAME, REGEX_PRICE, TYPES } from '../../../constants/Constants';
 
 const ProductHookForm = () => {
-  const [products, setProducts] = useState<IProduct[]>([]);
+  const dispatch = useAppDispatch();
   const [modal, setModal] = useState(false);
 
-  const updateProducts = (newProduct: IProduct) => {
-    const updatedProducts = [...products, newProduct];
-    setProducts(updatedProducts);
-  };
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<IForm>({
+  const methods = useForm<IForm>({
     mode: 'onSubmit',
     reValidateMode: 'onSubmit',
   });
 
   const onSubmit = (newProduct: IForm) => {
     setModal(true);
-    newProduct.image = URL.createObjectURL(newProduct.file![0]);
-    updateProducts(newProduct);
-    reset();
+    dispatch(addProduct(convertFormProductToProduct(newProduct)));
+    methods.reset();
     setTimeout(() => setModal(false), 1500);
   };
 
@@ -48,26 +40,31 @@ const ProductHookForm = () => {
         </Modal>
       )}
       <div className={styles.body}>
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-          <MyTitleInput register={register} errors={errors} />
-          <MyTextarea register={register} errors={errors} />
-          <div className={styles.row}>
-            <MyDateInput register={register} errors={errors} />
-            <MySelect register={register} errors={errors} />
-          </div>
-          <MyFileInput register={register} errors={errors} />
-          <div className={styles.row}>
-            <MyPriceInput register={register} errors={errors} />
-            <div className={styles.switches}>
-              <MyAvailSwitch register={register} errors={errors} />
-              <MySaleSwitch register={register} errors={errors} />
+        <FormProvider {...methods}>
+          <form onSubmit={methods.handleSubmit(onSubmit)} className={styles.form}>
+            <MyTitleInput
+              title="Enter title:"
+              name="title"
+              regexp={REGEX_NAME}
+              minLength={3}
+              maxLength={20}
+            />
+            <MyTextarea title="Enter description:" name="text" minLength={10} maxLength={200} />
+            <div className={styles.row}>
+              <MyDateInput title="Created at:" name="created" />
+              <MySelect title="Select type:" name="type" options={TYPES} />
             </div>
-          </div>
-          <button>Create</button>
-        </form>
-      </div>
-      <div className="cards">
-        <ProductList products={products} />
+            <MyFileInput title="Select image file:" name="file" />
+            <div className={styles.row}>
+              <MyPriceInput title="Enter price:" name="price" regexp={REGEX_PRICE} />
+              <div className={styles.switches}>
+                <MyAvailSwitch title="Available:" name="isAvailable" />
+                <MySaleSwitch />
+              </div>
+            </div>
+            <button>Create</button>
+          </form>
+        </FormProvider>
       </div>
     </div>
   );

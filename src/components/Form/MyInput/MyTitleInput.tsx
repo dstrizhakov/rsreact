@@ -1,32 +1,46 @@
+import { ERROR_MESSAGE, REGEX_ANY } from '../../../constants/Constants';
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
 import './MyInput.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MyTitleInput: FC<IInputProps> = ({ register, errors }) => {
+interface IInputProps {
+  title: string;
+  name: string;
+  maxLength?: number;
+  minLength?: number;
+  regexp?: RegExp;
+}
+
+const MyTitleInput: FC<IInputProps> = ({ title, name, minLength, maxLength, regexp }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.title ? 'input error' : 'input'}>
-      <label htmlFor="title">Enter title:</label>
+      <label htmlFor={name}>{title}</label>
       <input
-        data-testid="title"
-        id="title"
-        type="text"
-        {...register('title', {
-          required: 'Enter title',
+        data-testid={name}
+        id={name}
+        type={name}
+        {...register(name, {
+          required: ERROR_MESSAGE.TITLE.REQUIRED,
           minLength: {
-            value: 3,
-            message: 'Lenght should be at least 3',
+            value: minLength || 0,
+            message: ERROR_MESSAGE.TITLE.MIN,
           },
           maxLength: {
-            value: 50,
-            message: 'Max length is 50 symbols...',
+            value: maxLength || 100,
+            message: ERROR_MESSAGE.TITLE.MAX,
           },
           pattern: {
-            value: /^[\w-]+$/,
-            message: 'Letters, numbers and dash only are allowed',
+            value: regexp || REGEX_ANY,
+            message: ERROR_MESSAGE.TITLE.MESSAGE,
           },
         })}
       />
-      {errors?.title && <span>{errors?.title?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

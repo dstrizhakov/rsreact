@@ -3,12 +3,16 @@ import { FC, useEffect, useState } from 'react';
 import ProductList from '../components/ProductList/ProductList';
 import { IProduct } from 'types/Types';
 import { convertUpsplashToProducts } from '../utils/apiUtils';
-import { useAppSelector } from '../hooks/redux';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { setCards } from '../store/reducers/Home/home.slice';
 import { unsplashAPI } from '../services/unsplashService';
 import Preloader from '../components/Preloader/Preloader';
 
 const Home: FC = () => {
+  const dispatch = useAppDispatch();
   const queryFromStore = useAppSelector((store) => store.homeReducer.query);
+  const productsFromStore = useAppSelector((store) => store.homeReducer.cards);
+
   const {
     data: apiProducts,
     isLoading,
@@ -18,19 +22,19 @@ const Home: FC = () => {
   const [currentProducts, setCurrentProducts] = useState<IProduct[]>();
 
   useEffect(() => {
-    setCurrentProducts(convertUpsplashToProducts(apiProducts || []));
-  }, [apiProducts]);
+    setCurrentProducts(convertUpsplashToProducts(productsFromStore || []));
+  }, [productsFromStore]);
+
+  useEffect(() => {
+    dispatch(setCards(apiProducts || []));
+  }, [apiProducts, dispatch]);
 
   return (
     <div>
       <h1>Home</h1>
       <Search />
       {isError && <h2>Ошибка API, смотри консоль...</h2>}
-      {isLoading ? (
-        <Preloader />
-      ) : (
-        <div className="cards">{currentProducts && <ProductList products={currentProducts} />}</div>
-      )}
+      {isLoading ? <Preloader /> : <ProductList products={currentProducts || []} />}
     </div>
   );
 };

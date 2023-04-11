@@ -22,6 +22,13 @@ export interface IInput {
   isValid: boolean;
   type?: 'date' | 'file' | 'text';
 }
+export interface IInputProps {
+  title: string;
+  name: string;
+  maxLength?: number;
+  minLength?: number;
+  regexp?: RegExp;
+}
 
 export interface ISelect {
   id: string;
@@ -40,10 +47,10 @@ export interface ITextarea {
   isValid: boolean;
 }
 
-export type IInputProps = {
-  register: UseFormRegister<IForm>;
-  errors: FieldErrors<IForm>;
-};
+// export type IInputProps = {
+//   register: UseFormRegister<IForm>;
+//   errors: FieldErrors<IForm>;
+// };
 
 export interface IForm {
   id: string;

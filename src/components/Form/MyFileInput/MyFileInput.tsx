@@ -1,8 +1,15 @@
+import { ERROR_MESSAGE } from '../../../constants/Constants';
 import { FC } from 'react';
 import { IInputProps } from 'types/Types';
-import './MyFileInput';
+import '../MyInput/MyInput.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
+const MyFileInput: FC<IInputProps> = ({ title, name }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   function isValidFile(files: FileList) {
     const typeFile = files[0].type;
     if (typeFile === 'image/jpeg' || typeFile === 'image/png') {
@@ -12,18 +19,18 @@ const MyFileInput: FC<IInputProps> = ({ register, errors }) => {
   }
   return (
     <div className={errors?.file ? 'input error' : 'input'}>
-      <label htmlFor="file">Select file:</label>
+      <label htmlFor={name}>{title}</label>
       <input
-        data-testid="file"
-        id="file"
-        type="file"
+        data-testid={name}
+        id={name}
+        type={name}
         accept="image/*"
-        {...register('file', {
-          required: 'Attach the image file',
-          validate: (file) => isValidFile(file) || `Image file *jpeg or *png only accepted...`,
+        {...register(name, {
+          required: ERROR_MESSAGE.FILE.REQUIRED,
+          validate: (file) => isValidFile(file) || ERROR_MESSAGE.FILE.MESSAGE,
         })}
       />
-      {errors?.file && <span>{errors?.file?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

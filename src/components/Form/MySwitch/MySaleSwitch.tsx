@@ -1,8 +1,13 @@
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
+import { useFormContext } from 'react-hook-form';
 import './MySwitch.scss';
 
-const MySaleSwitch: FC<IInputProps> = ({ register, errors }) => {
+const MySaleSwitch: FC = () => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.isSale ? 'switch error' : 'switch'}>
       <p>Sale:</p>
@@ -14,7 +19,6 @@ const MySaleSwitch: FC<IInputProps> = ({ register, errors }) => {
         {...register('isSale', {})}
       ></input>
       <label htmlFor="isSale"></label>
-      {errors?.isSale && <span>{errors?.isSale?.message || 'Error'}</span>}
     </div>
   );
 };

@@ -1,24 +1,38 @@
+import { ERROR_MESSAGE, REGEX_ANY } from '../../../constants/Constants';
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
 import './MyInput.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MyPriceInput: FC<IInputProps> = ({ register, errors }) => {
+interface IInputProps {
+  title: string;
+  name: string;
+  maxLength?: number;
+  minLength?: number;
+  regexp?: RegExp;
+}
+
+const MyPriceInput: FC<IInputProps> = ({ title, name, regexp }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
   return (
     <div className={errors?.price ? 'input error' : 'input'}>
-      <label htmlFor="price">Enter price:</label>
+      <label htmlFor={name}>{title}</label>
       <input
-        data-testid="price"
-        id="price"
+        data-testid={name}
+        id={name}
         type="text"
-        {...register('price', {
-          required: 'Enter correct price...',
+        {...register(name, {
+          required: ERROR_MESSAGE.PRICE.REQUIRED,
           pattern: {
-            value: /^[0-9]*[.,]?[0-9]+$/,
-            message: 'Only numers...',
+            value: regexp || REGEX_ANY,
+            message: ERROR_MESSAGE.PRICE.MESSAGE,
           },
         })}
       />
-      {errors?.price && <span>{errors?.price?.message || 'Error'}</span>}
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

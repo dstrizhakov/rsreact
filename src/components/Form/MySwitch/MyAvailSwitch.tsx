@@ -1,22 +1,32 @@
+import { ERROR_MESSAGE } from '../../../constants/Constants';
 import { FC } from 'react';
-import { IInputProps } from 'types/Types';
 import './MySwitch.scss';
+import { useFormContext } from 'react-hook-form';
 
-const MyAvailSwitch: FC<IInputProps> = ({ register, errors }) => {
+interface ISwitchProps {
+  title: string;
+  name: string;
+}
+
+const MyAvailSwitch: FC<ISwitchProps> = ({ title, name }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
   return (
     <div className={errors?.isAvailable ? 'switch error' : 'switch'}>
-      <p>Available:</p>
+      <p>{title}</p>
       <input
-        data-testid="isAvailable"
-        id="isAvailable"
+        data-testid={name}
+        id={name}
         type="checkbox"
         className="checkbox"
         {...register('isAvailable', {
-          required: 'Product should be avail',
+          required: ERROR_MESSAGE.AVAIL.REQUIRED,
         })}
       ></input>
-      <label htmlFor="isAvailable"></label>
-      {errors?.isAvailable && <span>{errors?.isAvailable?.message || 'Error'}</span>}
+      <label htmlFor={name}></label>
+      <span>{errors[name] && `${errors[name]?.message || ERROR_MESSAGE.DEFAULT}`}</span>
     </div>
   );
 };

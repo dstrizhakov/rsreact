@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Card from '../Card/Card';
 import { IProduct } from 'types/Types';
+import styles from './ProductList.module.scss';
 
 interface ProductListProps {
   products: IProduct[];
@@ -23,7 +24,7 @@ const ProductList: FC<ProductListProps> = (props) => {
       isSale={product.isSale}
     />
   ));
-  return <>{productsElement}</>;
+  return <div className={styles.cards}>{productsElement}</div>;
 };
 
 export default ProductList;
