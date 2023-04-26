@@ -1,3 +1,5 @@
+import '@cypress/code-coverage/support';
+
 describe('App e2e', () => {
   it('should have search form on Home page', () => {
     cy.visit('/');
