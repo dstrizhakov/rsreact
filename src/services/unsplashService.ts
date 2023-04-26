@@ -13,7 +13,7 @@ export const unsplashAPI = createApi({
           orientation: 'landscape',
           query: query,
           count: 24,
-          client_id: 'GQpboVLxSu8scxvDv9g3SOJtb4cEg3q9t5ekYwiivas',
+          client_id: 'Y5Kt-xSrYLtKp5pzuFe7EXHOmSuOrtx11nVTeUZX2MQ',
         },
       }),
       providesTags: () => ['Photo'],
@@ -22,7 +22,7 @@ export const unsplashAPI = createApi({
       query: (id) => ({
         url: `/photos/${id}`,
         params: {
-          client_id: 'GQpboVLxSu8scxvDv9g3SOJtb4cEg3q9t5ekYwiivas',
+          client_id: 'Y5Kt-xSrYLtKp5pzuFe7EXHOmSuOrtx11nVTeUZX2MQ',
         },
       }),
     }),

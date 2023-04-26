@@ -12,6 +12,8 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --color",
     "test": "vitest",
+    "test:cypress": " start-server-and-test dev http://localhost:3000 cypress",
+    "cypress": "cypress open",
     "coverage": "vitest run --coverage",
     "preview": "vite preview",
     "prepare": "husky install",
@@ -42,6 +44,7 @@
     "sass": "^1.59.3"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.10.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/express": "^4.17.17",
@@ -51,9 +54,11 @@
     "@typescript-eslint/parser": "^5.55.0",
     "@vitejs/plugin-react": "^3.1.0",
     "@vitest/coverage-c8": "^0.29.3",
+    "cypress": "^12.10.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-cypress": "^2.13.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
@@ -63,6 +68,7 @@
     "lint-staged": "^13.2.0",
     "msw": "^1.2.1",
     "prettier": "^2.8.4",
+    "start-server-and-test": "^2.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.2.0",
     "vitest": "^0.29.3"

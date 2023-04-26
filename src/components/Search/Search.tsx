@@ -29,6 +29,7 @@ const Search: FC = () => {
         <div className={styles.search}>
           <input
             role="search"
+            data-testid="search-input"
             type="text"
             placeholder="Enter at least 3 symbols..."
             onChange={onChange}
@@ -36,7 +37,7 @@ const Search: FC = () => {
           />
           <span>Error. Search query should be not empty.</span>
         </div>
-        <button>Search</button>
+        <button data-testid="search-button">Search</button>
       </form>
     </div>
   );

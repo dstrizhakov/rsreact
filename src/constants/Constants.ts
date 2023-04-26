@@ -43,9 +43,8 @@ const TYPES = [
 
 const REGEX_ANY = /^.*$/;
 
-const REGEX_NAME =
-  /^(?:[A-ZА-ЯЁ][a-zа-яё]{2,}\s){0,2}[A-ZА-ЯЁ][a-zа-яё]{2,}(?:\s[A-ZА-ЯЁ][a-zа-яё]{2,})?$/;
+const REGEX_TITLE = /^[a-zA-Zа-яА-ЯёЁ0-9\s.,;:()'"!?-]+$/;
 
 const REGEX_PRICE = /^[0-9]*[.,]?[0-9]+$/;
 
-export { ERROR_MESSAGE, TYPES, REGEX_ANY, REGEX_NAME, REGEX_PRICE };
+export { ERROR_MESSAGE, TYPES, REGEX_ANY, REGEX_TITLE, REGEX_PRICE };

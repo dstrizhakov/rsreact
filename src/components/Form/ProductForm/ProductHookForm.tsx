@@ -14,7 +14,13 @@ import Modal from '../../Modal/Modal';
 import { useAppDispatch } from '../../../hooks/redux';
 import { addProduct } from '../../../store/reducers/Products/products.slice';
 import { convertFormProductToProduct } from '../../../utils/formUtils';
-import { REGEX_NAME, REGEX_PRICE, TYPES } from '../../../constants/Constants';
+import {
+  REGEX_ANY,
+  REGEX_NAME,
+  REGEX_PRICE,
+  REGEX_TITLE,
+  TYPES,
+} from '../../../constants/Constants';
 
 const ProductHookForm = () => {
   const dispatch = useAppDispatch();
@@ -45,9 +51,9 @@ const ProductHookForm = () => {
             <MyTitleInput
               title="Enter title:"
               name="title"
-              regexp={REGEX_NAME}
+              regexp={REGEX_TITLE}
               minLength={3}
-              maxLength={20}
+              maxLength={50}
             />
             <MyTextarea title="Enter description:" name="text" minLength={10} maxLength={200} />
             <div className={styles.row}>
@@ -62,7 +68,7 @@ const ProductHookForm = () => {
                 <MySaleSwitch />
               </div>
             </div>
-            <button>Create</button>
+            <button data-testid="form-submit">Create</button>
           </form>
         </FormProvider>
       </div>

@@ -13,6 +13,7 @@ const Modal: FC<ModalPropsType> = ({ isOpen, setIsOpen, children, variant = 'but
     <div className={isOpen ? styles.modal__active : styles.modal} onClick={() => setIsOpen(false)}>
       <div className={styles.content} onClick={(e) => e.stopPropagation()}>
         <span
+          data-testid="close-modal"
           className={variant === 'button' ? styles.close : styles.none}
           onClick={() => setIsOpen(false)}
         >

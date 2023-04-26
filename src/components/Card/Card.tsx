@@ -43,7 +43,7 @@ const Card: FC<IProduct> = ({
           isSale={isSale}
         />
       </Modal>
-      <div className={styles.card} onClick={() => handleClick()}>
+      <div data-testid="unsplash-card" className={styles.card} onClick={() => handleClick()}>
         <div className={styles.body}>
           {isSale && <span className={styles.sale}>Sale</span>}
           <div className={styles.image}>

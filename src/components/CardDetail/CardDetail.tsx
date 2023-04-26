@@ -21,7 +21,7 @@ const CardDetail: FC<IProduct> = ({
 
   return (
     <>
-      <div className={styles.card}>
+      <div data-testid="card-detail" className={styles.card}>
         <div className={styles.body}>
           {isSale && <span className={styles.sale}>Sale</span>}
           <div className={styles.image}>
