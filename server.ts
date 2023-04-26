@@ -36,8 +36,8 @@ export const createServer = async () => {
       });
     } catch (error) {
       console.log(error);
-      vite.ssrFixStacktrace(error);
-      next(error);
+      vite.ssrFixStacktrace(error as Error);
+      next(error as Error);
     }
   });
 
