@@ -1,0 +1,5817 @@
+{
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\hooks\\redux.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\hooks\\redux.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 30
+        },
+        "end": {
+          "line": 4,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 36
+        },
+        "end": {
+          "line": 4,
+          "column": 62
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 63
+        },
+        "end": {
+          "line": 5,
+          "column": 74
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 30
+          },
+          "end": {
+            "line": 4,
+            "column": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 36
+          },
+          "end": {
+            "line": 4,
+            "column": 62
+          }
+        },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 336,
+      "2": 33
+    },
+    "f": {
+      "0": 336
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "ca56d4435a99c0f93de1ae18d6ef15926110d0ac"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\reducers\\Home\\home.slice.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\reducers\\Home\\home.slice.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 9,
+          "column": 28
+        },
+        "end": {
+          "line": 12,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 14,
+          "column": 25
+        },
+        "end": {
+          "line": 25,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 19,
+          "column": 6
+        },
+        "end": {
+          "line": 19,
+          "column": 35
+        }
+      },
+      "3": {
+        "start": {
+          "line": 22,
+          "column": 6
+        },
+        "end": {
+          "line": 22,
+          "column": 35
+        }
+      },
+      "4": {
+        "start": {
+          "line": 27,
+          "column": 38
+        },
+        "end": {
+          "line": 27,
+          "column": 55
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 14
+          },
+          "end": {
+            "line": 18,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 56
+          },
+          "end": {
+            "line": 20,
+            "column": 5
+          }
+        },
+        "line": 18
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 14
+          },
+          "end": {
+            "line": 21,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 61
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        },
+        "line": 21
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 4,
+      "3": 40,
+      "4": 33
+    },
+    "f": {
+      "0": 4,
+      "1": 40
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "528edbee9ad3a053d6fcc80a98c7b8f39a0ac09d"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Search\\Search.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Search\\Search.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 19
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 30
+        },
+        "end": {
+          "line": 7,
+          "column": 42
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 19
+        },
+        "end": {
+          "line": 8,
+          "column": 35
+        }
+      },
+      "3": {
+        "start": {
+          "line": 9,
+          "column": 23
+        },
+        "end": {
+          "line": 9,
+          "column": 73
+        }
+      },
+      "4": {
+        "start": {
+          "line": 9,
+          "column": 49
+        },
+        "end": {
+          "line": 9,
+          "column": 72
+        }
+      },
+      "5": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 13,
+          "column": 21
+        }
+      },
+      "6": {
+        "start": {
+          "line": 12,
+          "column": 4
+        },
+        "end": {
+          "line": 12,
+          "column": 28
+        }
+      },
+      "7": {
+        "start": {
+          "line": 15,
+          "column": 19
+        },
+        "end": {
+          "line": 17,
+          "column": 3
+        }
+      },
+      "8": {
+        "start": {
+          "line": 16,
+          "column": 4
+        },
+        "end": {
+          "line": 16,
+          "column": 34
+        }
+      },
+      "9": {
+        "start": {
+          "line": 19,
+          "column": 19
+        },
+        "end": {
+          "line": 24,
+          "column": 3
+        }
+      },
+      "10": {
+        "start": {
+          "line": 20,
+          "column": 4
+        },
+        "end": {
+          "line": 20,
+          "column": 27
+        }
+      },
+      "11": {
+        "start": {
+          "line": 21,
+          "column": 4
+        },
+        "end": {
+          "line": 23,
+          "column": 5
+        }
+      },
+      "12": {
+        "start": {
+          "line": 22,
+          "column": 6
+        },
+        "end": {
+          "line": 22,
+          "column": 33
+        }
+      },
+      "13": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 43,
+          "column": 4
+        }
+      },
+      "14": {
+        "start": {
+          "line": 28,
+          "column": 33
+        },
+        "end": {
+          "line": 28,
+          "column": 48
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 19
+          },
+          "end": {
+            "line": 6,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 25
+          },
+          "end": {
+            "line": 44,
+            "column": 1
+          }
+        },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 38
+          },
+          "end": {
+            "line": 9,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 49
+          },
+          "end": {
+            "line": 9,
+            "column": 72
+          }
+        },
+        "line": 9
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 12
+          },
+          "end": {
+            "line": 11,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 18
+          },
+          "end": {
+            "line": 13,
+            "column": 3
+          }
+        },
+        "line": 11
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 19
+          },
+          "end": {
+            "line": 15,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 73
+          },
+          "end": {
+            "line": 17,
+            "column": 3
+          }
+        },
+        "line": 15
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 19
+          },
+          "end": {
+            "line": 19,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 64
+          },
+          "end": {
+            "line": 24,
+            "column": 3
+          }
+        },
+        "line": 19
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 22
+          },
+          "end": {
+            "line": 28,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 33
+          },
+          "end": {
+            "line": 28,
+            "column": 48
+          }
+        },
+        "line": 28
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 4
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 4
+            },
+            "end": {
+              "line": 23,
+              "column": 5
+            }
+          },
+          {
+            "start": {},
+            "end": {}
+          }
+        ],
+        "line": 21
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 184,
+      "2": 184,
+      "3": 184,
+      "4": 325,
+      "5": 184,
+      "6": 32,
+      "7": 184,
+      "8": 52,
+      "9": 184,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 184,
+      "14": 4
+    },
+    "f": {
+      "0": 184,
+      "1": 325,
+      "2": 32,
+      "3": 52,
+      "4": 4,
+      "5": 4
+    },
+    "b": {
+      "0": [
+        4,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "1979ce9fcc21295412ffe9bf237493ea513e998c"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Modal\\Modal.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Modal\\Modal.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 11,
+          "column": 34
+        },
+        "end": {
+          "line": 26,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 2
+        },
+        "end": {
+          "line": 25,
+          "column": 4
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 81
+        },
+        "end": {
+          "line": 13,
+          "column": 97
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 54
+        },
+        "end": {
+          "line": 14,
+          "column": 73
+        }
+      },
+      "4": {
+        "start": {
+          "line": 18,
+          "column": 25
+        },
+        "end": {
+          "line": 18,
+          "column": 41
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 34
+          },
+          "end": {
+            "line": 11,
+            "column": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 91
+          },
+          "end": {
+            "line": 26,
+            "column": 1
+          }
+        },
+        "line": 11
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 75
+          },
+          "end": {
+            "line": 13,
+            "column": 76
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 81
+          },
+          "end": {
+            "line": 13,
+            "column": 97
+          }
+        },
+        "line": 13
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 47
+          },
+          "end": {
+            "line": 14,
+            "column": 48
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 54
+          },
+          "end": {
+            "line": 14,
+            "column": 73
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 19
+          },
+          "end": {
+            "line": 18,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 25
+          },
+          "end": {
+            "line": 18,
+            "column": 41
+          }
+        },
+        "line": 18
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 66
+          },
+          "end": {
+            "line": 11,
+            "column": 84
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 11,
+              "column": 76
+            },
+            "end": {
+              "line": 11,
+              "column": 84
+            }
+          }
+        ],
+        "line": 11
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 20
+          },
+          "end": {
+            "line": 13,
+            "column": 64
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 13,
+              "column": 29
+            },
+            "end": {
+              "line": 13,
+              "column": 49
+            }
+          },
+          {
+            "start": {
+              "line": 13,
+              "column": 52
+            },
+            "end": {
+              "line": 13,
+              "column": 64
+            }
+          }
+        ],
+        "line": 13
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 21
+          },
+          "end": {
+            "line": 17,
+            "column": 70
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 44
+            },
+            "end": {
+              "line": 17,
+              "column": 56
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 59
+            },
+            "end": {
+              "line": 17,
+              "column": 70
+            }
+          }
+        ],
+        "line": 17
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 412,
+      "2": 0,
+      "3": 4,
+      "4": 4
+    },
+    "f": {
+      "0": 412,
+      "1": 0,
+      "2": 4,
+      "3": 4
+    },
+    "b": {
+      "0": [
+        412
+      ],
+      "1": [
+        12,
+        400
+      ],
+      "2": [
+        412,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "6bc433a4564a4e2db0f028261be9823f0b55cccf"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\CardDetail\\CardDetail.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\CardDetail\\CardDetail.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 33
+        },
+        "end": {
+          "line": 51,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 16,
+          "column": 26
+        },
+        "end": {
+          "line": 16,
+          "column": 46
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 20
+        },
+        "end": {
+          "line": 20,
+          "column": 3
+        }
+      },
+      "3": {
+        "start": {
+          "line": 19,
+          "column": 4
+        },
+        "end": {
+          "line": 19,
+          "column": 32
+        }
+      },
+      "4": {
+        "start": {
+          "line": 19,
+          "column": 22
+        },
+        "end": {
+          "line": 19,
+          "column": 30
+        }
+      },
+      "5": {
+        "start": {
+          "line": 22,
+          "column": 2
+        },
+        "end": {
+          "line": 50,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 33
+          },
+          "end": {
+            "line": 6,
+            "column": 34
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 6
+          },
+          "end": {
+            "line": 51,
+            "column": 1
+          }
+        },
+        "line": 15
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 20
+          },
+          "end": {
+            "line": 18,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 32
+          },
+          "end": {
+            "line": 20,
+            "column": 3
+          }
+        },
+        "line": 18
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 12
+          },
+          "end": {
+            "line": 19,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 22
+          },
+          "end": {
+            "line": 19,
+            "column": 30
+          }
+        },
+        "line": 19
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 35
+          },
+          "end": {
+            "line": 16,
+            "column": 45
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 16,
+              "column": 35
+            },
+            "end": {
+              "line": 16,
+              "column": 40
+            }
+          },
+          {
+            "start": {
+              "line": 16,
+              "column": 44
+            },
+            "end": {
+              "line": 16,
+              "column": 45
+            }
+          }
+        ],
+        "line": 16
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 11
+          },
+          "end": {
+            "line": 26,
+            "column": 62
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 26,
+              "column": 11
+            },
+            "end": {
+              "line": 26,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 26,
+              "column": 21
+            },
+            "end": {
+              "line": 26,
+              "column": 62
+            }
+          }
+        ],
+        "line": 26
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 45,
+            "column": 13
+          },
+          "end": {
+            "line": 45,
+            "column": 74
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 45,
+              "column": 27
+            },
+            "end": {
+              "line": 45,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 45,
+              "column": 56
+            },
+            "end": {
+              "line": 45,
+              "column": 74
+            }
+          }
+        ],
+        "line": 45
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 404,
+      "2": 404,
+      "3": 0,
+      "4": 0,
+      "5": 404
+    },
+    "f": {
+      "0": 404,
+      "1": 0,
+      "2": 0
+    },
+    "b": {
+      "0": [
+        404,
+        0
+      ],
+      "1": [
+        404,
+        8
+      ],
+      "2": [
+        404,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "5a7dc1dd909f3729b3f4ff2d48e6a943f1e82879"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Card\\Card.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Card\\Card.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 27
+        },
+        "end": {
+          "line": 71,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 20,
+          "column": 26
+        },
+        "end": {
+          "line": 20,
+          "column": 46
+        }
+      },
+      "2": {
+        "start": {
+          "line": 21,
+          "column": 28
+        },
+        "end": {
+          "line": 21,
+          "column": 43
+        }
+      },
+      "3": {
+        "start": {
+          "line": 23,
+          "column": 20
+        },
+        "end": {
+          "line": 25,
+          "column": 3
+        }
+      },
+      "4": {
+        "start": {
+          "line": 24,
+          "column": 4
+        },
+        "end": {
+          "line": 24,
+          "column": 32
+        }
+      },
+      "5": {
+        "start": {
+          "line": 24,
+          "column": 22
+        },
+        "end": {
+          "line": 24,
+          "column": 30
+        }
+      },
+      "6": {
+        "start": {
+          "line": 26,
+          "column": 22
+        },
+        "end": {
+          "line": 28,
+          "column": 3
+        }
+      },
+      "7": {
+        "start": {
+          "line": 27,
+          "column": 4
+        },
+        "end": {
+          "line": 27,
+          "column": 19
+        }
+      },
+      "8": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 70,
+          "column": 4
+        }
+      },
+      "9": {
+        "start": {
+          "line": 46,
+          "column": 78
+        },
+        "end": {
+          "line": 46,
+          "column": 91
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 27
+          },
+          "end": {
+            "line": 8,
+            "column": 28
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 6
+          },
+          "end": {
+            "line": 71,
+            "column": 1
+          }
+        },
+        "line": 19
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 23,
+            "column": 20
+          },
+          "end": {
+            "line": 23,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 32
+          },
+          "end": {
+            "line": 25,
+            "column": 3
+          }
+        },
+        "line": 23
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 12
+          },
+          "end": {
+            "line": 24,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 22
+          },
+          "end": {
+            "line": 24,
+            "column": 30
+          }
+        },
+        "line": 24
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 26,
+            "column": 22
+          },
+          "end": {
+            "line": 26,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 28
+          },
+          "end": {
+            "line": 28,
+            "column": 3
+          }
+        },
+        "line": 26
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 46,
+            "column": 72
+          },
+          "end": {
+            "line": 46,
+            "column": 73
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 46,
+            "column": 78
+          },
+          "end": {
+            "line": 46,
+            "column": 91
+          }
+        },
+        "line": 46
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 35
+          },
+          "end": {
+            "line": 20,
+            "column": 45
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 20,
+              "column": 35
+            },
+            "end": {
+              "line": 20,
+              "column": 40
+            }
+          },
+          {
+            "start": {
+              "line": 20,
+              "column": 44
+            },
+            "end": {
+              "line": 20,
+              "column": 45
+            }
+          }
+        ],
+        "line": 20
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 48,
+            "column": 11
+          },
+          "end": {
+            "line": 48,
+            "column": 62
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 48,
+              "column": 11
+            },
+            "end": {
+              "line": 48,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 48,
+              "column": 21
+            },
+            "end": {
+              "line": 48,
+              "column": 62
+            }
+          }
+        ],
+        "line": 48
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 61,
+            "column": 13
+          },
+          "end": {
+            "line": 65,
+            "column": 13
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 62,
+              "column": 14
+            },
+            "end": {
+              "line": 62,
+              "column": 58
+            }
+          },
+          {
+            "start": {
+              "line": 64,
+              "column": 14
+            },
+            "end": {
+              "line": 64,
+              "column": 60
+            }
+          }
+        ],
+        "line": 61
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 404,
+      "2": 404,
+      "3": 404,
+      "4": 0,
+      "5": 0,
+      "6": 404,
+      "7": 4,
+      "8": 404,
+      "9": 4
+    },
+    "f": {
+      "0": 404,
+      "1": 0,
+      "2": 0,
+      "3": 4,
+      "4": 4
+    },
+    "b": {
+      "0": [
+        404,
+        0
+      ],
+      "1": [
+        404,
+        8
+      ],
+      "2": [
+        404,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "485dc3a10c30a05b79ba38593b09e61f768b42e1"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\ProductList\\ProductList.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\ProductList\\ProductList.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 10,
+          "column": 42
+        },
+        "end": {
+          "line": 28,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 23
+        },
+        "end": {
+          "line": 11,
+          "column": 28
+        }
+      },
+      "2": {
+        "start": {
+          "line": 12,
+          "column": 26
+        },
+        "end": {
+          "line": 26,
+          "column": 4
+        }
+      },
+      "3": {
+        "start": {
+          "line": 13,
+          "column": 4
+        },
+        "end": {
+          "line": 25,
+          "column": 6
+        }
+      },
+      "4": {
+        "start": {
+          "line": 27,
+          "column": 2
+        },
+        "end": {
+          "line": 27,
+          "column": 63
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 42
+          },
+          "end": {
+            "line": 10,
+            "column": 43
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 53
+          },
+          "end": {
+            "line": 28,
+            "column": 1
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 39
+          },
+          "end": {
+            "line": 12,
+            "column": 40
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 4
+          },
+          "end": {
+            "line": 25,
+            "column": 6
+          }
+        },
+        "line": 13
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 64,
+      "2": 64,
+      "3": 396,
+      "4": 64
+    },
+    "f": {
+      "0": 64,
+      "1": 396
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "8bd8481054d0656db0d69414eef34aba8cb8beef"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\utils\\apiUtils.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\utils\\apiUtils.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 19
+        },
+        "end": {
+          "line": 19,
+          "column": 4
+        }
+      },
+      "1": {
+        "start": {
+          "line": 6,
+          "column": 4
+        },
+        "end": {
+          "line": 18,
+          "column": 6
+        }
+      },
+      "2": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 20,
+          "column": 18
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "convertUpsplashToProducts",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 16
+          },
+          "end": {
+            "line": 4,
+            "column": 41
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 77
+          },
+          "end": {
+            "line": 21,
+            "column": 1
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 32
+          },
+          "end": {
+            "line": 5,
+            "column": 33
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 53
+          },
+          "end": {
+            "line": 19,
+            "column": 3
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 12
+          },
+          "end": {
+            "line": 12,
+            "column": 83
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 12,
+              "column": 13
+            },
+            "end": {
+              "line": 12,
+              "column": 29
+            }
+          },
+          {
+            "start": {
+              "line": 12,
+              "column": 33
+            },
+            "end": {
+              "line": 12,
+              "column": 62
+            }
+          },
+          {
+            "start": {
+              "line": 12,
+              "column": 67
+            },
+            "end": {
+              "line": 12,
+              "column": 83
+            }
+          }
+        ],
+        "line": 12
+      }
+    },
+    "s": {
+      "0": 64,
+      "1": 384,
+      "2": 64
+    },
+    "f": {
+      "0": 64,
+      "1": 384
+    },
+    "b": {
+      "0": [
+        384,
+        143,
+        241
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "476740ae26d23decdffd5986a896469750efd90b"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\services\\unsplashService.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\services\\unsplashService.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 27
+        },
+        "end": {
+          "line": 30,
+          "column": 2
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 25
+        },
+        "end": {
+          "line": 29,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 25
+        },
+        "end": {
+          "line": 18,
+          "column": 7
+        }
+      },
+      "3": {
+        "start": {
+          "line": 19,
+          "column": 26
+        },
+        "end": {
+          "line": 19,
+          "column": 35
+        }
+      },
+      "4": {
+        "start": {
+          "line": 22,
+          "column": 22
+        },
+        "end": {
+          "line": 27,
+          "column": 7
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 13
+          },
+          "end": {
+            "line": 8,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 25
+          },
+          "end": {
+            "line": 29,
+            "column": 3
+          }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 13
+          },
+          "end": {
+            "line": 10,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 25
+          },
+          "end": {
+            "line": 18,
+            "column": 7
+          }
+        },
+        "line": 10
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 20
+          },
+          "end": {
+            "line": 19,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 26
+          },
+          "end": {
+            "line": 19,
+            "column": 35
+          }
+        },
+        "line": 19
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 13
+          },
+          "end": {
+            "line": 22,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 22
+          },
+          "end": {
+            "line": 27,
+            "column": 7
+          }
+        },
+        "line": 22
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 28,
+      "3": 16,
+      "4": 0
+    },
+    "f": {
+      "0": 33,
+      "1": 28,
+      "2": 16,
+      "3": 0
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a7c9a416585aeba8250a9240b3a5447c73baa5e8"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Preloader\\Preloader.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Preloader\\Preloader.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 22
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 7,
+          "column": 8
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 22
+          },
+          "end": {
+            "line": 4,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 2
+          },
+          "end": {
+            "line": 7,
+            "column": 8
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 84
+    },
+    "f": {
+      "0": 84
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "2716e9467a21d7bbb5d6ad77394660bf283338af"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\Home.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\Home.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 11,
+          "column": 17
+        },
+        "end": {
+          "line": 40,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 19
+        },
+        "end": {
+          "line": 12,
+          "column": 35
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 25
+        },
+        "end": {
+          "line": 13,
+          "column": 75
+        }
+      },
+      "3": {
+        "start": {
+          "line": 13,
+          "column": 51
+        },
+        "end": {
+          "line": 13,
+          "column": 74
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 28
+        },
+        "end": {
+          "line": 14,
+          "column": 78
+        }
+      },
+      "5": {
+        "start": {
+          "line": 14,
+          "column": 54
+        },
+        "end": {
+          "line": 14,
+          "column": 77
+        }
+      },
+      "6": {
+        "start": {
+          "line": 20,
+          "column": 6
+        },
+        "end": {
+          "line": 20,
+          "column": 54
+        }
+      },
+      "7": {
+        "start": {
+          "line": 22,
+          "column": 48
+        },
+        "end": {
+          "line": 22,
+          "column": 70
+        }
+      },
+      "8": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 26,
+          "column": 26
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
+          "line": 25,
+          "column": 75
+        }
+      },
+      "10": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 30,
+          "column": 30
+        }
+      },
+      "11": {
+        "start": {
+          "line": 29,
+          "column": 4
+        },
+        "end": {
+          "line": 29,
+          "column": 42
+        }
+      },
+      "12": {
+        "start": {
+          "line": 32,
+          "column": 2
+        },
+        "end": {
+          "line": 39,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 17
+          },
+          "end": {
+            "line": 11,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 23
+          },
+          "end": {
+            "line": 40,
+            "column": 1
+          }
+        },
+        "line": 11
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 40
+          },
+          "end": {
+            "line": 13,
+            "column": 41
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 51
+          },
+          "end": {
+            "line": 13,
+            "column": 74
+          }
+        },
+        "line": 13
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 43
+          },
+          "end": {
+            "line": 14,
+            "column": 44
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 54
+          },
+          "end": {
+            "line": 14,
+            "column": 77
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 12
+          },
+          "end": {
+            "line": 24,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 18
+          },
+          "end": {
+            "line": 26,
+            "column": 3
+          }
+        },
+        "line": 24
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 12
+          },
+          "end": {
+            "line": 28,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 18
+          },
+          "end": {
+            "line": 30,
+            "column": 3
+          }
+        },
+        "line": 28
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 49
+          },
+          "end": {
+            "line": 25,
+            "column": 72
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 25,
+              "column": 49
+            },
+            "end": {
+              "line": 25,
+              "column": 66
+            }
+          },
+          {
+            "start": {
+              "line": 25,
+              "column": 70
+            },
+            "end": {
+              "line": 25,
+              "column": 72
+            }
+          }
+        ],
+        "line": 25
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 22
+          },
+          "end": {
+            "line": 29,
+            "column": 39
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 29,
+              "column": 22
+            },
+            "end": {
+              "line": 29,
+              "column": 33
+            }
+          },
+          {
+            "start": {
+              "line": 29,
+              "column": 37
+            },
+            "end": {
+              "line": 29,
+              "column": 39
+            }
+          }
+        ],
+        "line": 29
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 36,
+            "column": 7
+          },
+          "end": {
+            "line": 36,
+            "column": 86
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 36,
+              "column": 7
+            },
+            "end": {
+              "line": 36,
+              "column": 14
+            }
+          },
+          {
+            "start": {
+              "line": 36,
+              "column": 18
+            },
+            "end": {
+              "line": 36,
+              "column": 86
+            }
+          }
+        ],
+        "line": 36
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 7
+          },
+          "end": {
+            "line": 37,
+            "column": 83
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 37,
+              "column": 19
+            },
+            "end": {
+              "line": 37,
+              "column": 32
+            }
+          },
+          {
+            "start": {
+              "line": 37,
+              "column": 35
+            },
+            "end": {
+              "line": 37,
+              "column": 83
+            }
+          }
+        ],
+        "line": 37
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 58
+          },
+          "end": {
+            "line": 37,
+            "column": 79
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 37,
+              "column": 58
+            },
+            "end": {
+              "line": 37,
+              "column": 73
+            }
+          },
+          {
+            "start": {
+              "line": 37,
+              "column": 77
+            },
+            "end": {
+              "line": 37,
+              "column": 79
+            }
+          }
+        ],
+        "line": 37
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 128,
+      "2": 128,
+      "3": 269,
+      "4": 128,
+      "5": 269,
+      "6": 128,
+      "7": 128,
+      "8": 128,
+      "9": 64,
+      "10": 128,
+      "11": 40,
+      "12": 128
+    },
+    "f": {
+      "0": 128,
+      "1": 269,
+      "2": 269,
+      "3": 64,
+      "4": 40
+    },
+    "b": {
+      "0": [
+        64,
+        0
+      ],
+      "1": [
+        40,
+        24
+      ],
+      "2": [
+        128,
+        0
+      ],
+      "3": [
+        84,
+        44
+      ],
+      "4": [
+        44,
+        4
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "670cf9c25cf242db6ec2902f31d907342bf3fb67"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\NotFound.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\NotFound.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 21
+        },
+        "end": {
+          "line": 9,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 8,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 21
+          },
+          "end": {
+            "line": 3,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 27
+          },
+          "end": {
+            "line": 9,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 0
+    },
+    "f": {
+      "0": 0
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a7330b286dcc03ba39421c8ab4c36fa25de37ad0"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\About.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\About.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 18
+        },
+        "end": {
+          "line": 22,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 18
+          },
+          "end": {
+            "line": 3,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 24
+          },
+          "end": {
+            "line": 22,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 12
+    },
+    "f": {
+      "0": 12
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "08bb3c11cde67eb2f32633c7473ba0e6d835a0e6"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\containers\\ProductListContainer\\ProductListContainer.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\containers\\ProductListContainer\\ProductListContainer.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 33
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 6,
+          "column": 24
+        },
+        "end": {
+          "line": 6,
+          "column": 81
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 50
+        },
+        "end": {
+          "line": 6,
+          "column": 80
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 2
+        },
+        "end": {
+          "line": 7,
+          "column": 50
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 33
+          },
+          "end": {
+            "line": 5,
+            "column": 34
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 39
+          },
+          "end": {
+            "line": 8,
+            "column": 1
+          }
+        },
+        "line": 5
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 39
+          },
+          "end": {
+            "line": 6,
+            "column": 40
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 50
+          },
+          "end": {
+            "line": 6,
+            "column": 80
+          }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 20,
+      "2": 40,
+      "3": 20
+    },
+    "f": {
+      "0": 20,
+      "1": 40
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "f11a22ba8df670b9f08d3d9b22c53becff776964"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\constants\\Constants.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\constants\\Constants.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 22
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 36,
+          "column": 14
+        },
+        "end": {
+          "line": 42,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 44,
+          "column": 18
+        },
+        "end": {
+          "line": 44,
+          "column": 24
+        }
+      },
+      "3": {
+        "start": {
+          "line": 46,
+          "column": 20
+        },
+        "end": {
+          "line": 46,
+          "column": 57
+        }
+      },
+      "4": {
+        "start": {
+          "line": 48,
+          "column": 20
+        },
+        "end": {
+          "line": 48,
+          "column": 41
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 33,
+      "3": 33,
+      "4": 33
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b324d475c36ebf3a26d0bba1edd87a8193123e5f"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyTextarea\\MyTextarea.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyTextarea\\MyTextarea.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 36
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 6
+        },
+        "end": {
+          "line": 11,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 36
+          },
+          "end": {
+            "line": 7,
+            "column": 37
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 79
+          },
+          "end": {
+            "line": 34,
+            "column": 1
+          }
+        },
+        "line": 7
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 20
+          },
+          "end": {
+            "line": 14,
+            "column": 64
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 14,
+              "column": 35
+            },
+            "end": {
+              "line": 14,
+              "column": 51
+            }
+          },
+          {
+            "start": {
+              "line": 14,
+              "column": 54
+            },
+            "end": {
+              "line": 14,
+              "column": 64
+            }
+          }
+        ],
+        "line": 14
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 19
+          },
+          "end": {
+            "line": 22,
+            "column": 33
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 22,
+              "column": 19
+            },
+            "end": {
+              "line": 22,
+              "column": 28
+            }
+          },
+          {
+            "start": {
+              "line": 22,
+              "column": 32
+            },
+            "end": {
+              "line": 22,
+              "column": 33
+            }
+          }
+        ],
+        "line": 22
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 19
+          },
+          "end": {
+            "line": 26,
+            "column": 35
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 26,
+              "column": 19
+            },
+            "end": {
+              "line": 26,
+              "column": 28
+            }
+          },
+          {
+            "start": {
+              "line": 26,
+              "column": 32
+            },
+            "end": {
+              "line": 26,
+              "column": 35
+            }
+          }
+        ],
+        "line": 26
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 31,
+            "column": 13
+          },
+          "end": {
+            "line": 31,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 31,
+              "column": 13
+            },
+            "end": {
+              "line": 31,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 31,
+              "column": 29
+            },
+            "end": {
+              "line": 31,
+              "column": 80
+            }
+          }
+        ],
+        "line": 31
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 31,
+            "column": 32
+          },
+          "end": {
+            "line": 31,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 31,
+              "column": 32
+            },
+            "end": {
+              "line": 31,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 31,
+              "column": 57
+            },
+            "end": {
+              "line": 31,
+              "column": 78
+            }
+          }
+        ],
+        "line": 31
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        24,
+        0
+      ],
+      "2": [
+        24,
+        0
+      ],
+      "3": [
+        24,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "1e223b5dc8f427704ede93e9e37a618d6f7ae5a1"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySelect\\MySelect.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySelect\\MySelect.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 35
+        },
+        "end": {
+          "line": 38,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 16,
+          "column": 6
+        },
+        "end": {
+          "line": 16,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 2
+        },
+        "end": {
+          "line": 37,
+          "column": 4
+        }
+      },
+      "3": {
+        "start": {
+          "line": 30,
+          "column": 10
+        },
+        "end": {
+          "line": 32,
+          "column": 19
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 35
+          },
+          "end": {
+            "line": 12,
+            "column": 36
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 65
+          },
+          "end": {
+            "line": 38,
+            "column": 1
+          }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 29,
+            "column": 22
+          },
+          "end": {
+            "line": 29,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 10
+          },
+          "end": {
+            "line": 32,
+            "column": 19
+          }
+        },
+        "line": 30
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 20
+          },
+          "end": {
+            "line": 19,
+            "column": 58
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 19,
+              "column": 35
+            },
+            "end": {
+              "line": 19,
+              "column": 48
+            }
+          },
+          {
+            "start": {
+              "line": 19,
+              "column": 51
+            },
+            "end": {
+              "line": 19,
+              "column": 58
+            }
+          }
+        ],
+        "line": 19
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 13
+          },
+          "end": {
+            "line": 35,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 35,
+              "column": 13
+            },
+            "end": {
+              "line": 35,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 35,
+              "column": 29
+            },
+            "end": {
+              "line": 35,
+              "column": 80
+            }
+          }
+        ],
+        "line": 35
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 32
+          },
+          "end": {
+            "line": 35,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 35,
+              "column": 32
+            },
+            "end": {
+              "line": 35,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 35,
+              "column": 57
+            },
+            "end": {
+              "line": 35,
+              "column": 78
+            }
+          }
+        ],
+        "line": 35
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24,
+      "3": 120
+    },
+    "f": {
+      "0": 24,
+      "1": 120
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        24,
+        0
+      ],
+      "2": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "3cf2fad9861a62d8c74a91bdd06cdbaea7c66bc5"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyFileInput\\MyFileInput.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyFileInput\\MyFileInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 37
+        },
+        "end": {
+          "line": 36,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 6
+        },
+        "end": {
+          "line": 11,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 14,
+          "column": 21
+        },
+        "end": {
+          "line": 14,
+          "column": 34
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 4
+        },
+        "end": {
+          "line": 17,
+          "column": 5
+        }
+      },
+      "4": {
+        "start": {
+          "line": 16,
+          "column": 6
+        },
+        "end": {
+          "line": 16,
+          "column": 18
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 4
+        },
+        "end": {
+          "line": 18,
+          "column": 17
+        }
+      },
+      "6": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 35,
+          "column": 4
+        }
+      },
+      "7": {
+        "start": {
+          "line": 30,
+          "column": 30
+        },
+        "end": {
+          "line": 30,
+          "column": 77
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 37
+          },
+          "end": {
+            "line": 7,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 58
+          },
+          "end": {
+            "line": 36,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "isValidFile",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 11
+          },
+          "end": {
+            "line": 13,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 40
+          },
+          "end": {
+            "line": 19,
+            "column": 3
+          }
+        },
+        "line": 13
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 30,
+            "column": 20
+          },
+          "end": {
+            "line": 30,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 30
+          },
+          "end": {
+            "line": 30,
+            "column": 77
+          }
+        },
+        "line": 30
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 4
+          },
+          "end": {
+            "line": 17,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 15,
+              "column": 4
+            },
+            "end": {
+              "line": 17,
+              "column": 5
+            }
+          },
+          {
+            "start": {},
+            "end": {}
+          }
+        ],
+        "line": 15
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 8
+          },
+          "end": {
+            "line": 15,
+            "column": 61
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 15,
+              "column": 8
+            },
+            "end": {
+              "line": 15,
+              "column": 33
+            }
+          },
+          {
+            "start": {
+              "line": 15,
+              "column": 37
+            },
+            "end": {
+              "line": 15,
+              "column": 61
+            }
+          }
+        ],
+        "line": 15
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 20
+          },
+          "end": {
+            "line": 21,
+            "column": 58
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 35
+            },
+            "end": {
+              "line": 21,
+              "column": 48
+            }
+          },
+          {
+            "start": {
+              "line": 21,
+              "column": 51
+            },
+            "end": {
+              "line": 21,
+              "column": 58
+            }
+          }
+        ],
+        "line": 21
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 30
+          },
+          "end": {
+            "line": 30,
+            "column": 77
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 30
+            },
+            "end": {
+              "line": 30,
+              "column": 47
+            }
+          },
+          {
+            "start": {
+              "line": 30,
+              "column": 51
+            },
+            "end": {
+              "line": 30,
+              "column": 77
+            }
+          }
+        ],
+        "line": 30
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 13
+          },
+          "end": {
+            "line": 33,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 33,
+              "column": 13
+            },
+            "end": {
+              "line": 33,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 33,
+              "column": 29
+            },
+            "end": {
+              "line": 33,
+              "column": 80
+            }
+          }
+        ],
+        "line": 33
+      },
+      "5": {
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 32
+          },
+          "end": {
+            "line": 33,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 33,
+              "column": 32
+            },
+            "end": {
+              "line": 33,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 33,
+              "column": 57
+            },
+            "end": {
+              "line": 33,
+              "column": 78
+            }
+          }
+        ],
+        "line": 33
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 8,
+      "3": 8,
+      "4": 8,
+      "5": 0,
+      "6": 24,
+      "7": 8
+    },
+    "f": {
+      "0": 24,
+      "1": 8,
+      "2": 8
+    },
+    "b": {
+      "0": [
+        8,
+        0
+      ],
+      "1": [
+        8,
+        0
+      ],
+      "2": [
+        0,
+        24
+      ],
+      "3": [
+        8,
+        0
+      ],
+      "4": [
+        24,
+        0
+      ],
+      "5": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "477af31fb0601074c96c06fec68ea157d6c364fa"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\utils\\formUtils.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\utils\\formUtils.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 22
+        },
+        "end": {
+          "line": 4,
+          "column": 36
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 22
+        },
+        "end": {
+          "line": 5,
+          "column": 52
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 8,
+          "column": 3
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 7,
+          "column": 16
+        }
+      },
+      "4": {
+        "start": {
+          "line": 9,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 15
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 18
+        },
+        "end": {
+          "line": 25,
+          "column": 3
+        }
+      },
+      "6": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 26,
+          "column": 17
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "isValidDate",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 16
+          },
+          "end": {
+            "line": 3,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 42
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 3
+      },
+      "1": {
+        "name": "convertFormProductToProduct",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 16
+          },
+          "end": {
+            "line": 12,
+            "column": 43
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 74
+          },
+          "end": {
+            "line": 27,
+            "column": 1
+          }
+        },
+        "line": 12
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 2
+          },
+          "end": {
+            "line": 8,
+            "column": 3
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 6,
+              "column": 2
+            },
+            "end": {
+              "line": 8,
+              "column": 3
+            }
+          },
+          {
+            "start": {},
+            "end": {}
+          }
+        ],
+        "line": 6
+      }
+    },
+    "s": {
+      "0": 8,
+      "1": 8,
+      "2": 8,
+      "3": 8,
+      "4": 0,
+      "5": 8,
+      "6": 8
+    },
+    "f": {
+      "0": 8,
+      "1": 8
+    },
+    "b": {
+      "0": [
+        8,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b6858258ba688892246b6de480331daf8a43f61e"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyDateInput\\MyDateInput.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyDateInput\\MyDateInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 37
+        },
+        "end": {
+          "line": 29,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 6
+        },
+        "end": {
+          "line": 12,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 14,
+          "column": 2
+        },
+        "end": {
+          "line": 28,
+          "column": 4
+        }
+      },
+      "3": {
+        "start": {
+          "line": 23,
+          "column": 30
+        },
+        "end": {
+          "line": 23,
+          "column": 77
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 37
+          },
+          "end": {
+            "line": 8,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 58
+          },
+          "end": {
+            "line": 29,
+            "column": 1
+          }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 23,
+            "column": 20
+          },
+          "end": {
+            "line": 23,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 30
+          },
+          "end": {
+            "line": 23,
+            "column": 77
+          }
+        },
+        "line": 23
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 20
+          },
+          "end": {
+            "line": 15,
+            "column": 61
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 15,
+              "column": 38
+            },
+            "end": {
+              "line": 15,
+              "column": 51
+            }
+          },
+          {
+            "start": {
+              "line": 15,
+              "column": 54
+            },
+            "end": {
+              "line": 15,
+              "column": 61
+            }
+          }
+        ],
+        "line": 15
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 30
+          },
+          "end": {
+            "line": 23,
+            "column": 77
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 23,
+              "column": 30
+            },
+            "end": {
+              "line": 23,
+              "column": 47
+            }
+          },
+          {
+            "start": {
+              "line": 23,
+              "column": 51
+            },
+            "end": {
+              "line": 23,
+              "column": 77
+            }
+          }
+        ],
+        "line": 23
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 13
+          },
+          "end": {
+            "line": 26,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 26,
+              "column": 13
+            },
+            "end": {
+              "line": 26,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 26,
+              "column": 29
+            },
+            "end": {
+              "line": 26,
+              "column": 80
+            }
+          }
+        ],
+        "line": 26
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 32
+          },
+          "end": {
+            "line": 26,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 26,
+              "column": 32
+            },
+            "end": {
+              "line": 26,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 26,
+              "column": 57
+            },
+            "end": {
+              "line": 26,
+              "column": 78
+            }
+          }
+        ],
+        "line": 26
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24,
+      "3": 8
+    },
+    "f": {
+      "0": 24,
+      "1": 8
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        8,
+        0
+      ],
+      "2": [
+        24,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a0fc4a2e7f15fee2b8adb308614ad30bf137fd26"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyInput\\MyTitleInput.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyInput\\MyTitleInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 14,
+          "column": 38
+        },
+        "end": {
+          "line": 46,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 18,
+          "column": 6
+        },
+        "end": {
+          "line": 18,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 38
+          },
+          "end": {
+            "line": 14,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 89
+          },
+          "end": {
+            "line": 46,
+            "column": 1
+          }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 20
+          },
+          "end": {
+            "line": 21,
+            "column": 59
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 36
+            },
+            "end": {
+              "line": 21,
+              "column": 49
+            }
+          },
+          {
+            "start": {
+              "line": 21,
+              "column": 52
+            },
+            "end": {
+              "line": 21,
+              "column": 59
+            }
+          }
+        ],
+        "line": 21
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 19
+          },
+          "end": {
+            "line": 30,
+            "column": 33
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 19
+            },
+            "end": {
+              "line": 30,
+              "column": 28
+            }
+          },
+          {
+            "start": {
+              "line": 30,
+              "column": 32
+            },
+            "end": {
+              "line": 30,
+              "column": 33
+            }
+          }
+        ],
+        "line": 30
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 34,
+            "column": 19
+          },
+          "end": {
+            "line": 34,
+            "column": 35
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 34,
+              "column": 19
+            },
+            "end": {
+              "line": 34,
+              "column": 28
+            }
+          },
+          {
+            "start": {
+              "line": 34,
+              "column": 32
+            },
+            "end": {
+              "line": 34,
+              "column": 35
+            }
+          }
+        ],
+        "line": 34
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 19
+          },
+          "end": {
+            "line": 38,
+            "column": 38
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 38,
+              "column": 19
+            },
+            "end": {
+              "line": 38,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 38,
+              "column": 29
+            },
+            "end": {
+              "line": 38,
+              "column": 38
+            }
+          }
+        ],
+        "line": 38
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 13
+          },
+          "end": {
+            "line": 43,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 43,
+              "column": 13
+            },
+            "end": {
+              "line": 43,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 43,
+              "column": 29
+            },
+            "end": {
+              "line": 43,
+              "column": 80
+            }
+          }
+        ],
+        "line": 43
+      },
+      "5": {
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 32
+          },
+          "end": {
+            "line": 43,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 43,
+              "column": 32
+            },
+            "end": {
+              "line": 43,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 43,
+              "column": 57
+            },
+            "end": {
+              "line": 43,
+              "column": 78
+            }
+          }
+        ],
+        "line": 43
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        24,
+        0
+      ],
+      "2": [
+        24,
+        0
+      ],
+      "3": [
+        24,
+        0
+      ],
+      "4": [
+        24,
+        0
+      ],
+      "5": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "765bb06702a1ec18bdac3b859a9ce2b00f8753b9"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySwitch\\MyAvailSwitch.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySwitch\\MyAvailSwitch.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 11,
+          "column": 40
+        },
+        "end": {
+          "line": 32,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 15,
+          "column": 6
+        },
+        "end": {
+          "line": 15,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 31,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 40
+          },
+          "end": {
+            "line": 11,
+            "column": 41
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 61
+          },
+          "end": {
+            "line": 32,
+            "column": 1
+          }
+        },
+        "line": 11
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 20
+          },
+          "end": {
+            "line": 17,
+            "column": 67
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 42
+            },
+            "end": {
+              "line": 17,
+              "column": 56
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 59
+            },
+            "end": {
+              "line": 17,
+              "column": 67
+            }
+          }
+        ],
+        "line": 17
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 13
+          },
+          "end": {
+            "line": 29,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 29,
+              "column": 13
+            },
+            "end": {
+              "line": 29,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 29,
+              "column": 29
+            },
+            "end": {
+              "line": 29,
+              "column": 80
+            }
+          }
+        ],
+        "line": 29
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 32
+          },
+          "end": {
+            "line": 29,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 29,
+              "column": 32
+            },
+            "end": {
+              "line": 29,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 29,
+              "column": 57
+            },
+            "end": {
+              "line": 29,
+              "column": 78
+            }
+          }
+        ],
+        "line": 29
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        24,
+        0
+      ],
+      "2": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "2ef3569d2db319be644a5b40f9fced10690c4421"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySwitch\\MySaleSwitch.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MySwitch\\MySaleSwitch.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 25
+        },
+        "end": {
+          "line": 24,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 9,
+          "column": 6
+        },
+        "end": {
+          "line": 9,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 23,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 25
+          },
+          "end": {
+            "line": 5,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 31
+          },
+          "end": {
+            "line": 24,
+            "column": 1
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 20
+          },
+          "end": {
+            "line": 12,
+            "column": 62
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 12,
+              "column": 37
+            },
+            "end": {
+              "line": 12,
+              "column": 51
+            }
+          },
+          {
+            "start": {
+              "line": 12,
+              "column": 54
+            },
+            "end": {
+              "line": 12,
+              "column": 62
+            }
+          }
+        ],
+        "line": 12
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "d35c75f12de8b997cccfbb9c5bbc8ee562fe5f49"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyInput\\MyPriceInput.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\MyInput\\MyPriceInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 14,
+          "column": 38
+        },
+        "end": {
+          "line": 38,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 18,
+          "column": 6
+        },
+        "end": {
+          "line": 18,
+          "column": 22
+        }
+      },
+      "2": {
+        "start": {
+          "line": 20,
+          "column": 2
+        },
+        "end": {
+          "line": 37,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 38
+          },
+          "end": {
+            "line": 14,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 67
+          },
+          "end": {
+            "line": 38,
+            "column": 1
+          }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 20
+          },
+          "end": {
+            "line": 21,
+            "column": 59
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 36
+            },
+            "end": {
+              "line": 21,
+              "column": 49
+            }
+          },
+          {
+            "start": {
+              "line": 21,
+              "column": 52
+            },
+            "end": {
+              "line": 21,
+              "column": 59
+            }
+          }
+        ],
+        "line": 21
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 19
+          },
+          "end": {
+            "line": 30,
+            "column": 38
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 19
+            },
+            "end": {
+              "line": 30,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 30,
+              "column": 29
+            },
+            "end": {
+              "line": 30,
+              "column": 38
+            }
+          }
+        ],
+        "line": 30
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 13
+          },
+          "end": {
+            "line": 35,
+            "column": 80
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 35,
+              "column": 13
+            },
+            "end": {
+              "line": 35,
+              "column": 25
+            }
+          },
+          {
+            "start": {
+              "line": 35,
+              "column": 29
+            },
+            "end": {
+              "line": 35,
+              "column": 80
+            }
+          }
+        ],
+        "line": 35
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 32
+          },
+          "end": {
+            "line": 35,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 35,
+              "column": 32
+            },
+            "end": {
+              "line": 35,
+              "column": 53
+            }
+          },
+          {
+            "start": {
+              "line": 35,
+              "column": 57
+            },
+            "end": {
+              "line": 35,
+              "column": 78
+            }
+          }
+        ],
+        "line": 35
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        0,
+        24
+      ],
+      "1": [
+        24,
+        0
+      ],
+      "2": [
+        24,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "c8d957bc797290c3113153f902b327c86a36d96d"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\reducers\\Products\\products.slice.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\reducers\\Products\\products.slice.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 39
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 29
+        },
+        "end": {
+          "line": 20,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 17,
+          "column": 6
+        },
+        "end": {
+          "line": 17,
+          "column": 59
+        }
+      },
+      "3": {
+        "start": {
+          "line": 22,
+          "column": 30
+        },
+        "end": {
+          "line": 22,
+          "column": 51
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 16,
+            "column": 16
+          },
+          "end": {
+            "line": 16,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 60
+          },
+          "end": {
+            "line": 18,
+            "column": 5
+          }
+        },
+        "line": 16
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 8,
+      "3": 33
+    },
+    "f": {
+      "0": 8
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "745ab18e59d0c12c24a35060a494e708ab4aac41"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\ProductForm\\ProductHookForm.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Form\\ProductForm\\ProductHookForm.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 19,
+          "column": 24
+        },
+        "end": {
+          "line": 71,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 20,
+          "column": 19
+        },
+        "end": {
+          "line": 20,
+          "column": 35
+        }
+      },
+      "2": {
+        "start": {
+          "line": 21,
+          "column": 28
+        },
+        "end": {
+          "line": 21,
+          "column": 43
+        }
+      },
+      "3": {
+        "start": {
+          "line": 23,
+          "column": 18
+        },
+        "end": {
+          "line": 26,
+          "column": 4
+        }
+      },
+      "4": {
+        "start": {
+          "line": 28,
+          "column": 19
+        },
+        "end": {
+          "line": 33,
+          "column": 3
+        }
+      },
+      "5": {
+        "start": {
+          "line": 29,
+          "column": 4
+        },
+        "end": {
+          "line": 29,
+          "column": 19
+        }
+      },
+      "6": {
+        "start": {
+          "line": 30,
+          "column": 4
+        },
+        "end": {
+          "line": 30,
+          "column": 66
+        }
+      },
+      "7": {
+        "start": {
+          "line": 31,
+          "column": 4
+        },
+        "end": {
+          "line": 31,
+          "column": 20
+        }
+      },
+      "8": {
+        "start": {
+          "line": 32,
+          "column": 4
+        },
+        "end": {
+          "line": 32,
+          "column": 44
+        }
+      },
+      "9": {
+        "start": {
+          "line": 32,
+          "column": 21
+        },
+        "end": {
+          "line": 32,
+          "column": 36
+        }
+      },
+      "10": {
+        "start": {
+          "line": 35,
+          "column": 2
+        },
+        "end": {
+          "line": 70,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 24
+          },
+          "end": {
+            "line": 19,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 30
+          },
+          "end": {
+            "line": 71,
+            "column": 1
+          }
+        },
+        "line": 19
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 19
+          },
+          "end": {
+            "line": 28,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 42
+          },
+          "end": {
+            "line": 33,
+            "column": 3
+          }
+        },
+        "line": 28
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 32,
+            "column": 15
+          },
+          "end": {
+            "line": 32,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 21
+          },
+          "end": {
+            "line": 32,
+            "column": 36
+          }
+        },
+        "line": 32
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 7
+          },
+          "end": {
+            "line": 41,
+            "column": 7
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 37,
+              "column": 7
+            },
+            "end": {
+              "line": 37,
+              "column": 12
+            }
+          },
+          {
+            "start": {
+              "line": 38,
+              "column": 8
+            },
+            "end": {
+              "line": 40,
+              "column": 16
+            }
+          }
+        ],
+        "line": 37
+      }
+    },
+    "s": {
+      "0": 33,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 8,
+      "6": 8,
+      "7": 8,
+      "8": 8,
+      "9": 4,
+      "10": 24
+    },
+    "f": {
+      "0": 24,
+      "1": 8,
+      "2": 4
+    },
+    "b": {
+      "0": [
+        24,
+        8
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "d7fb38cec782ee4016f026f0977aca099a8ad6aa"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\Form.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\pages\\Form.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 13,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 2
+          },
+          "end": {
+            "line": 6,
+            "column": 3
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 22
+          },
+          "end": {
+            "line": 14,
+            "column": 3
+          }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 12
+    },
+    "f": {
+      "0": 12
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "21408453c8e3569021e37387d20e6637ed9b656e"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Footer\\Footer.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Footer\\Footer.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 25,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 2
+          },
+          "end": {
+            "line": 6,
+            "column": 3
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 22
+          },
+          "end": {
+            "line": 26,
+            "column": 3
+          }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33
+    },
+    "f": {
+      "0": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "4f077277f2f90d1948da70e00b7a68f4881b832e"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Header\\Header.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Header\\Header.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 19
+        },
+        "end": {
+          "line": 28,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 2
+        },
+        "end": {
+          "line": 27,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 19
+          },
+          "end": {
+            "line": 6,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 25
+          },
+          "end": {
+            "line": 28,
+            "column": 1
+          }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33
+    },
+    "f": {
+      "0": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "0c99b7d2d5540e0e01cea2126bd0ba273a955c87"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Layout\\Layout.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\components\\Layout\\Layout.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 19
+        },
+        "end": {
+          "line": 18,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 2
+        },
+        "end": {
+          "line": 17,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 19
+          },
+          "end": {
+            "line": 6,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 25
+          },
+          "end": {
+            "line": 18,
+            "column": 1
+          }
+        },
+        "line": 6
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33
+    },
+    "f": {
+      "0": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "08112daa7c072c602b06f11b26b00b458781bd8a"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\App.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\App.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 4
+        },
+        "end": {
+          "line": 24,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 2
+          },
+          "end": {
+            "line": 11,
+            "column": 3
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 22
+          },
+          "end": {
+            "line": 25,
+            "column": 3
+          }
+        },
+        "line": 11
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33
+    },
+    "f": {
+      "0": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "14146d84ab5c3ffe2bf2083345422e92ba941edf"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\store.ts": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\store\\store.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 20
+        },
+        "end": {
+          "line": 10,
+          "column": 2
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 26
+        },
+        "end": {
+          "line": 17,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 42
+        },
+        "end": {
+          "line": 15,
+          "column": 95
+        }
+      },
+      "4": {
+        "start": {
+          "line": 19,
+          "column": 21
+        },
+        "end": {
+          "line": 19,
+          "column": 33
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 26
+          },
+          "end": {
+            "line": 12,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 32
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 16
+          },
+          "end": {
+            "line": 15,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 42
+          },
+          "end": {
+            "line": 15,
+            "column": 95
+          }
+        },
+        "line": 15
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 33,
+      "3": 33,
+      "4": 33
+    },
+    "f": {
+      "0": 33,
+      "1": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "541b4ac045c0d1cf926b2f329a092b047684f0ee"
+  },
+  "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\entry-client.tsx": {
+    "path": "D:\\FrontEnd\\RSSchool\\react-course\\rsreact\\src\\entry-client.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 20
+        },
+        "end": {
+          "line": 16,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 4
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 14
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 20
+          },
+          "end": {
+            "line": 7,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 26
+          },
+          "end": {
+            "line": 16,
+            "column": 1
+          }
+        },
+        "line": 7
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 33,
+      "1": 33,
+      "2": 33
+    },
+    "f": {
+      "0": 33
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a9a68c55c3409f4b7c870a6052e2f2a1a4fa3232"
+  }
+}

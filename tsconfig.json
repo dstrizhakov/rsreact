@@ -15,5 +15,6 @@
     "baseUrl": "./src",
     "resolveJsonModule": true
   },
-  "include": ["./src/**/*", "styled.d.ts"]
+  "include": ["src", "server.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

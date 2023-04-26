@@ -14,13 +14,7 @@ import Modal from '../../Modal/Modal';
 import { useAppDispatch } from '../../../hooks/redux';
 import { addProduct } from '../../../store/reducers/Products/products.slice';
 import { convertFormProductToProduct } from '../../../utils/formUtils';
-import {
-  REGEX_ANY,
-  REGEX_NAME,
-  REGEX_PRICE,
-  REGEX_TITLE,
-  TYPES,
-} from '../../../constants/Constants';
+import { REGEX_PRICE, REGEX_TITLE, TYPES } from '../../../constants/Constants';
 
 const ProductHookForm = () => {
   const dispatch = useAppDispatch();
