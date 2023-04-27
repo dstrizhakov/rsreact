@@ -1,6 +1,10 @@
 import '@cypress/code-coverage/support';
 
 describe('App e2e', () => {
+  afterEach(() => {
+    cy.window().trigger('unload');
+  });
+
   it('should have search form on Home page', () => {
     cy.visit('/');
     cy.get('input').should('have.value', '');

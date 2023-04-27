@@ -1,5 +1,9 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
+import { createApi } from '@reduxjs/toolkit/dist/query/react';
 import { IUnsplash } from 'types/Unsplash';
+
+import * as rtkQuery from '@reduxjs/toolkit/dist/query/react/index.js';
+type TypeRtkQuery = typeof rtkQuery & { default?: unknown };
+const { fetchBaseQuery } = ((rtkQuery as TypeRtkQuery).default ?? rtkQuery) as typeof rtkQuery;
 
 export const unsplashAPI = createApi({
   reducerPath: 'unsplashAPI',
@@ -28,3 +32,5 @@ export const unsplashAPI = createApi({
     }),
   }),
 });
+
+export const { useSearchPhotosQuery, useGetPhotoQuery } = unsplashAPI;
